@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/progectFromUral.iml" filepath="$PROJECT_DIR$/.idea/progectFromUral.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/webpack-template-pug.iml" filepath="$PROJECT_DIR$/.idea/webpack-template-pug.iml" />
     </modules>
   </component>
 </project>

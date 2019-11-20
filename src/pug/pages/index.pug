@@ -1,23 +1,11 @@
-extends ../layout/main
+include ../utils/mixins
 
-block variables
-  - var title = 'Webpack + Pug';
-  - var description = 'Description for Webpack + Pug';
-  - var pageClass = 'index-page';
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title ural
+    meta(name="description", content=description)
 
-block content
-  section
-    .container
-      +item('item title', 'item descr')
-      +item('item title', 'item descr')
-      +item('item title', 'item descr')
-  example-component
-
-
-block script
-  script(type='text/javascript').
-    const foo = true;
-    let bar = function() {};
-    if (foo) {
-    bar(1 + 5)
-    }
+    body(class="pageClass")
+      p ural

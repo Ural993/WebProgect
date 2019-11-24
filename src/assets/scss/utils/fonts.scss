@@ -1,2 +1,10 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/assets/fonts/Quicksand-Regular.ttf") format("truetype")
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype")
+}

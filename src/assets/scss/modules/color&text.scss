@@ -1,6 +1,144 @@
-// footer style
-.section-wrapper-color-inner-box  {
-  width: 70px;
-  height: 70px;
-  background-color: red;
+.section-wrapper{
+  display: flex;
+  &-logo{
+    img{
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+  &-color{
+    margin-left: 150px;
+    margin-bottom: 150px;
+    margin-top: 63px;
+    &-inner{
+      display: flex;
+      margin-top: 20px;
+      &-box1{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: #1F2041;
+      }
+      &-box2{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: rgba(31, 32, 65, 0.75);
+      }
+      &-box3{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: rgba(31, 32, 65, 0.5);
+      }
+      &-box4{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: rgba(31, 32, 65, 0.25);
+      }
+      &-box5{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: rgba(31, 32, 65, 0.05);
+      }
+      &-box6{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: #BC9CFF;
+      }
+      &-box7{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: #6FCF97;
+      }
+      &-name{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 7px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+    }
+  }
+  &-text{
+    margin-top: 63px;
+    &-inner{
+      display: flex;
+      margin-left: 435px;
+      &-h1{
+        font-family: $Montserrat-Regular;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 30px;
+        color: rgba(31, 32, 65, 0.25);
+      }
+      &-text1{
+        font-family: $Quicksand-Regular;
+        font-size: 24px;
+        font-style: normal;
+        margin-left: 30px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      &-h2{
+        font-family: $Montserrat-Regular;
+        font-size: 19px;
+        font-style: normal;
+        line-height: 24px;
+        margin-top: 50px;
+        color: rgba(31, 32, 65, 0.25);
+      }
+      &-text2{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-left: 30px;
+        line-height: 24px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      &-h3{
+        font-family: $Montserrat-Regular;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 15px;
+        margin-top: 50px;
+        color: rgba(31, 32, 65, 0.25);
+      }
+      &-text3{
+        font-family: $Montserrat-Regular;
+        font-size: 12px;
+        font-style: normal;
+        margin-left: 30px;
+        line-height: 15px;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+      &-body{
+        font-family: $Montserrat-Regular;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px;
+        margin-top: 50px;
+        color: rgba(31, 32, 65, 0.25);
+      }
+      &-text4{
+        font-family: $Montserrat-Regular;
+        font-size: 14px;
+        font-style: normal;
+        margin-left: 30px;
+        line-height: 24px;
+        font-weight: normal;
+        margin-top: 50px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+
+    }
+
+  }
 }

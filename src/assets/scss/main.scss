@@ -2,14 +2,11 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
-@import "utils/reset";
+//@import "utils/reset";
 @import "modules/color&text";
 
 html {
-  line-height: $mainLineHeight;
-	font-size: $mainFontSize;
-	color: $mainFontColor;
-  height: 100%;
+
   @media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
   }
@@ -24,9 +21,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: $mainFont;
-	font-size: $mainFontSize;
-  font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

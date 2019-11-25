@@ -1,18 +1,16 @@
+.section-logo{
+  img{
+    margin-left: 30px;
+    margin-top: 30px;
+  }}
 .section-wrapper{
   display: flex;
-  &-logo{
-    img{
-      margin-left: 30px;
-      margin-top: 30px;
-    }
-  }
   &-color{
     margin-left: 150px;
     margin-bottom: 150px;
     margin-top: 63px;
     &-inner{
       display: flex;
-      margin-top: 20px;
       &-box1{
         width: 70px;
         height: 70px;
@@ -24,42 +22,96 @@
         height: 70px;
         border-radius: 6px;
         background-color: rgba(31, 32, 65, 0.75);
+        margin-top: 20px;
       }
       &-box3{
         width: 70px;
         height: 70px;
         border-radius: 6px;
         background-color: rgba(31, 32, 65, 0.5);
+        margin-top: 20px;
       }
       &-box4{
         width: 70px;
         height: 70px;
         border-radius: 6px;
         background-color: rgba(31, 32, 65, 0.25);
+        margin-top: 20px;
       }
       &-box5{
         width: 70px;
         height: 70px;
         border-radius: 6px;
         background-color: rgba(31, 32, 65, 0.05);
+        margin-top: 20px;
       }
       &-box6{
         width: 70px;
         height: 70px;
         border-radius: 6px;
         background-color: #BC9CFF;
+        margin-top: 20px;
       }
       &-box7{
         width: 70px;
         height: 70px;
         border-radius: 6px;
         background-color: #6FCF97;
+        margin-top: 20px;
       }
-      &-name{
+      &-name1{
         font-family: $Quicksand-Regular;
         font-size: 19px;
         font-style: normal;
         margin-top: 7px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+      &-name2{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 29px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+      &-name3{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 29px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+      &-name4{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 29px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+      &-name5{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 29px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+      &-name6{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 29px;
+        margin-left: 40px;
+        line-height: 29px;
+      }
+      &-name7{
+        font-family: $Quicksand-Regular;
+        font-size: 19px;
+        font-style: normal;
+        margin-top: 29px;
         margin-left: 40px;
         line-height: 29px;
       }
@@ -76,6 +128,8 @@
         font-style: normal;
         line-height: 30px;
         color: rgba(31, 32, 65, 0.25);
+        margin-left: 8px;
+
       }
       &-text1{
         font-family: $Quicksand-Regular;
@@ -92,6 +146,7 @@
         line-height: 24px;
         margin-top: 50px;
         color: rgba(31, 32, 65, 0.25);
+        margin-left: 10px;
       }
       &-text2{
         font-family: $Quicksand-Regular;
@@ -101,6 +156,7 @@
         line-height: 24px;
         font-weight: bold;
         margin-top: 50px;
+        margin-left: 30px;
       }
       &-h3{
         font-family: $Montserrat-Regular;
@@ -109,6 +165,7 @@
         line-height: 15px;
         margin-top: 50px;
         color: rgba(31, 32, 65, 0.25);
+        margin-left: 20px;
       }
       &-text3{
         font-family: $Montserrat-Regular;
@@ -124,7 +181,7 @@
         font-size: 14px;
         font-style: normal;
         line-height: 24px;
-        margin-top: 50px;
+        margin-top: 48px;
         color: rgba(31, 32, 65, 0.25);
       }
       &-text4{
@@ -134,7 +191,7 @@
         margin-left: 30px;
         line-height: 24px;
         font-weight: normal;
-        margin-top: 50px;
+        margin-top: 48px;
         color: rgba(31, 32, 65, 0.75);
       }
 

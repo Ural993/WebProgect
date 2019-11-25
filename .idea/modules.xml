@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/WebProgect.iml" filepath="$PROJECT_DIR$/.idea/WebProgect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WebProgect.iml" filepath="$PROJECT_DIR$/.idea/WebProgect.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/webpack-template-pug.iml" filepath="$PROJECT_DIR$/.idea/webpack-template-pug.iml" />
     </modules>
   </component>

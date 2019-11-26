@@ -1,0 +1,40 @@
+.section-cards{
+    display: grid;
+    grid-gap: 40px;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 350px 50px;
+    grid-template-areas:
+        "f b c"
+        "r b r1"
+        "r e r2";
+    &-found{
+        grid-area: f;
+        background-color: red;
+        width: 374;
+        height: 380;
+    } 
+    &-booking{
+        grid-area: b;
+        background-color: gray
+    } 
+    &-calendar{
+        grid-area: c;
+        background-color: green
+    } 
+    &-registration{
+        grid-area: r;
+        background-color: black
+    } 
+    &-enter{
+        grid-area: e;
+        background-color: pink
+    } 
+    &-room1{
+        grid-area: r1;
+        background-color: royalblue;
+    }  
+    &-room2{
+        grid-area: r2;
+        background-color: sandybrown;
+    }
+}

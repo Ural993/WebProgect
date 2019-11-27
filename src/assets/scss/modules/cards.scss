@@ -1,40 +1,53 @@
 .section-cards{
-    display: grid;
-    grid-gap: 40px;    
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 350px 50px;
-    grid-template-areas:
-        "f b c"
-        "r b r1"
-        "r e r2";
+    display: flex;
+    margin-top: 68px;
+    &-found_registration{
+        margin-left: 140px;
+        margin-bottom: 140px;
+    }
+    &-booking_enter{
+        margin-left: 40px;
+    }
+    &-calendar_room1_room2{
+        margin-left: 40px;
+    }
     &-found{
-        grid-area: f;
+        width: 380px;
+        height: 374px;
         background-color: red;
-        width: 374;
-        height: 380;
-    } 
+        margin-bottom: 40px;
+    }
     &-booking{
-        grid-area: b;
-        background-color: gray
+        width: 380px;
+        height: 511px;
+        background-color: gray;
+        margin-bottom: 40px;
     } 
     &-calendar{
-        grid-area: c;
-        background-color: green
+        width: 320px;
+        height: 369px;
+        background-color: green;
+        margin-bottom: 40px;
     } 
     &-registration{
-        grid-area: r;
-        background-color: black
+        width: 380px;
+        height: 646px;
+        background-color: black;
     } 
     &-enter{
-        grid-area: e;
-        background-color: pink
+        width: 380px;
+        height: 358px;
+        background-color: pink;
     } 
     &-room1{
-        grid-area: r1;
+        width: 270px;
+        height: 257px;
         background-color: royalblue;
+        margin-bottom: 40px;
     }  
     &-room2{
-        grid-area: r2;
+        width: 270px;
+        height: 257px;
         background-color: sandybrown;
     }
 }

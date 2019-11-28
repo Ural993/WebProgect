@@ -1,4 +1,11 @@
 .section-cards{
+    p{
+        margin: 5px;
+        font-family: $Montserrat-Regular;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+    }
     display: flex;
     margin-top: 68px;
     &-found_registration{
@@ -11,6 +18,7 @@
     &-calendar_room1_room2{
         margin-left: 40px;
     }
+    //---Блок поиска номера--
     &-found{
         width: 380px;
         height: 374px;
@@ -25,14 +33,16 @@
             font-size: 24px;
             line-height: 30px;
             margin-bottom: 20px;
-            font-family: $Quicksand-Regular;
+            font-family: $OpenSans-Regular;
+            font-weight: bold;
         }
         &-wrapper_date{
             display: flex;
             margin-bottom: 20px;
+            
             img{
                 margin-left: 120px;
-                margin-top: 16px;
+                margin-top: 18px;
             }
             &-arrive{
                 width: 150px;
@@ -54,6 +64,17 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 31px;
+            img{
+                margin-left: 290px;
+                margin-top: 18px;
+            }
+            &-guests{
+                width: 320px;
+                height: 44px;
+                border: 1px solid rgba(31, 32, 65, 0.25);
+                box-sizing: border-box;
+                border-radius: 4px;  
+            }
         }
         button{
             width: 320px;
@@ -62,7 +83,6 @@
             background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
             color: white;
         }
-
     }
     &-booking{
         width: 380px;

@@ -1,11 +1,4 @@
 .section-cards{
-    p{
-        margin: 5px;
-        font-family: $Montserrat-Regular;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-    }
     display: flex;
     margin-top: 68px;
     &-found_registration{
@@ -41,23 +34,63 @@
             margin-bottom: 20px;
             
             img{
-                margin-left: 120px;
-                margin-top: 18px;
+                margin-left: 15px;
             }
             &-arrive{
-                width: 150px;
-                height: 44px;
-                border: 1px solid rgba(31, 32, 65, 0.25);
-                box-sizing: border-box;
-                border-radius: 4px;
-                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+                .arrive{
+                    margin: 5px;
+                    font-family: $Montserrat-Regular;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                &-date{
+                    display: flex;
+                    align-items: center;
+                    width: 150px;
+                    height: 44px;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    margin-right: 20px;
+                    p{
+                        margin-left: 15px;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: normal;
+                        font-family: $Montserrat-Regular;
+                    }
+                }
+
             }
             &-departure{
-                width: 150px;
-                height: 44px;
-                border: 1px solid rgba(31, 32, 65, 0.25);
-                box-sizing: border-box;
-                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                .departure{
+                    margin: 5px;
+                    font-family: $Montserrat-Regular;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                &-date{
+                    display: flex;
+                    align-items: center;
+                    width: 150px;
+                    height: 44px;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    p{
+                        margin-left: 15px;
+                        font-size: 14px;
+                        line-height: 18px;
+                        font-weight: normal;
+                        font-family: $Montserrat-Regular;
+                    }
+                }
             }
         }
         &-wrapper_guests{

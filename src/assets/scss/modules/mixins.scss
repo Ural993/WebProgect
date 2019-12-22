@@ -1,0 +1,89 @@
+@mixin bigBtn{
+    button{
+        display: flex;
+        align-items: center;
+        width: 320px;
+        height: 44px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: white;
+        border: none;
+        .button{
+            margin-left: 80px;
+            font-family: $Montserrat-Regular;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        img{
+            margin-left: 70px;
+        }
+}}
+@mixin littleInput{
+    .litInp{
+        display: flex;
+        flex-direction: column;
+        .litInpTitle{
+            margin-bottom: 5px;
+            font-family: $Montserrat-Regular;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .litInpDate{
+            display: flex;
+            align-items: center;
+            width: 150px;
+            height: 44px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-right: 20px;
+            p{
+                margin-left: 15px;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: normal;
+                font-family: $Montserrat-Regular;
+            }
+        }
+        img{
+            margin-left: 15px;
+        }
+
+    }
+}
+@mixin bigInput{
+    .bigInp{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 31px;
+        .bigInpTitle{
+            margin-bottom: 5px;
+            font-family: $Montserrat-Regular;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        img{
+            margin-left: 160px;
+        }
+        .bigInpDate{
+            display: flex;
+            align-items: center;
+            width: 320px;
+            height: 44px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            p{
+                margin-left: 15px;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: normal;
+                font-family: $Montserrat-Regular;
+            }
+        }
+    }
+}

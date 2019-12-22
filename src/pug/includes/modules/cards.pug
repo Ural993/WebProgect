@@ -2,28 +2,9 @@
   img(src="/assets/img/Group.svg")
 .section-cards
  .section-cards-found_registration
-   .section-cards-found
-       .section-cards-found-title Найдем номера под <br/> ваши пожелания
-       .section-cards-found-wrapper_date
-           .section-cards-found-wrapper_date-arrive
-               .arrive ПРИБЫТИЕ
-               .section-cards-found-wrapper_date-arrive-date
-                   p ДД.ММ.ГГГГ
-                   img(src="/assets/img/expand_more.svg")
-           .section-cards-found-wrapper_date-departure
-               .departure ВЫЕЗД
-               .section-cards-found-wrapper_date-departure-date
-                   p ДД.ММ.ГГГГ
-                   img(src="/assets/img/expand_more.svg")
-       .section-cards-found-wrapper_guests 
-            .guests ГОСТИ
-            .section-cards-found-wrapper_guests-guests
-                p Сколько гостей
-                img(src="/assets/img/expand_more.svg")
-       button 
-        .button ПОДОБРАТЬ НОМЕР
-        img(src="/assets/img/arrow_forward.svg")
-   .section-cards-registration 
+   include ./block-found.pug
+   .section-cards-registration
+       .section-cards-registration-title Регистрация аккаунта
  .section-cards-booking_enter
    .section-cards-booking
    .section-cards-enter

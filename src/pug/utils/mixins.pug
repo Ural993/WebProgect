@@ -1,4 +1,15 @@
-mixin item(title, descr)
-  .item
-    h2.item-title= title
-    p.item-descr= descr
+mixin bigBtn(title)
+  .button= title
+    img(src="/assets/img/arrow_forward.svg")
+mixin littleInput(title)
+  .litInp
+    .litInpTitle=title
+    .litInpDate
+      p ДД.ММ.ГГГГ
+      img(src="/assets/img/expand_more.svg")
+mixin bigInput(title)
+  .bigInp
+    .bigInpTitle=title
+    .bigInpDate
+      p Сколько гостей
+      img(src="/assets/img/expand_more.svg")

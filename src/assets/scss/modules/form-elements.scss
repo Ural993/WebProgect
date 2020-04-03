@@ -1,0 +1,38 @@
+@import "./mixins.scss";
+@include littleInput;
+@include bigBtn;
+@include bigInputWithIMG;
+    //---Блок форм--
+.section-formElements{
+    display: flex;
+    margin-bottom: 163px;
+    &-block1{
+        margin-left: 141px;
+        .element1{
+            width: 320px;
+            height: 44px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 15px;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: rgba(31, 32, 65, 0.25);
+        }
+        .element1::placeholder{
+            color: rgba(31, 32, 65, 0.25) ;
+        }
+    &-block2{
+
+    }
+    &-block3{
+
+    }
+    }
+}
+   
+

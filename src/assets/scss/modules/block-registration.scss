@@ -1,0 +1,87 @@
+@import "./mixins.scss";
+@include littleInput;
+@include bigBtn;
+@include bigInput;
+    //---Блок поиска номера--
+    &-registration{
+        width: 380px;
+        height: 374px;
+        margin-bottom: 40px;
+        padding: 40px 30px 30px 30px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        &-title{
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            font-family: $OpenSans-Regular;
+            font-weight: bold;
+        }
+        &-bigInput1{
+            margin-bottom: 10px;
+        }
+        &-bigInput2{
+            margin-bottom: 10px;
+        }
+        &-gender{
+            display: flex;
+            &-man{
+                display: flex;
+                margin-right: 20px;
+                &-circle{
+                    margin-right: 14px;    
+                    width: 20px;
+                    height: 20px;
+                    background: #FFFFFF;
+                    border: 1px solid #BC9CFF;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    padding-right: 15px;
+                    &-inner{
+                        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                        border-radius: 10px;
+                        width: 12px;
+                        height: 12px;
+                        margin-top: 3px;
+                        margin-left: 3px;;
+                    }
+                }
+                &-title{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            &-woman{
+                display: flex;
+                &-circle{
+                    margin-right: 14px;    
+                    width: 20px;
+                    height: 20px;
+                    background: #FFFFFF;
+                    border: 1px solid #BC9CFF;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    padding-right: 15px;}
+                }
+            }
+        &-bigInput3{
+            margin-top: 20px;
+        }
+        &-bigInput4{
+            margin-top: 20px; 
+        }
+        &-bigInput5{
+            margin-top: 10px;
+        }
+
+        
+        }
+    
+
+

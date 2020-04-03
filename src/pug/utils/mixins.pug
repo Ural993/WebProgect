@@ -4,12 +4,17 @@ mixin bigBtn(title)
 mixin littleInput(title)
   .litInp
     .litInpTitle=title
+    input(type="text" placeholder ="ДД.ММ.ГГГГ")
     .litInpDate
       p ДД.ММ.ГГГГ
       img(src="/assets/img/expand_more.svg")
-mixin bigInput(title)
+mixin bigInputWithIMG(title1, title2, img)
   .bigInp
-    .bigInpTitle=title
+    .bigInpTitle= title1   
     .bigInpDate
-      p Сколько гостей
-      img(src="/assets/img/expand_more.svg")
+      p= title2
+      if(img)      
+        img(src="/assets/img/expand_more.svg")
+mixin bigInput(title1)
+    .bigInpDate
+      p= title1  

@@ -54,11 +54,10 @@
 
     }
 }
-@mixin bigInput{
+@mixin bigInputWithIMG{
     .bigInp{
         display: flex;
         flex-direction: column;
-        margin-bottom: 31px;
         .bigInpTitle{
             margin-bottom: 5px;
             font-family: $Montserrat-Regular;
@@ -85,5 +84,22 @@
                 font-family: $Montserrat-Regular;
             }
         }
+    }
+}
+@mixin bigInput{
+    .bigInpDate{
+            align-items: center;
+            width: 320px;
+            height: 44px;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            p{
+                margin-left: 15px;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: normal;
+                font-family: $Montserrat-Regular;
+            }
     }
 }

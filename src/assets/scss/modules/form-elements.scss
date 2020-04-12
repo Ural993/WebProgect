@@ -7,11 +7,13 @@
     display: flex;
     margin-bottom: 163px;
     &-block1{
+        display: flex;
+        flex-direction: column;
         margin-left: 141px;
         .element1{
             width: 320px;
             height: 44px;
-            font-family: Montserrat;
+            font-family: 'Montserrat-Regular';
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
@@ -27,7 +29,7 @@
             color: rgba(31, 32, 65, 0.25) ;
         }
     &-block2{
-
+    
     }
     &-block3{
 

@@ -2,14 +2,50 @@
 @include littleInput;
 @include bigBtn;
 @include bigInputWithIMG;
+@mixin title1 {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+@mixin title2 {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase; 
+    color: rgba(31, 32, 65, 0.5);
+}
     //---Блок форм--
 .section-formElements{
     display: flex;
-    margin-bottom: 163px;
+    margin-top: 60px;
     &-block1{
         display: flex;
         flex-direction: column;
         margin-left: 141px;
+        margin-right: 126px;
+        .element1Title{
+            display: flex;
+            &-1{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                margin-right: 190.74px;
+                @include title1;
+            }
+            &-2{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                @include title2;
+            }
+        }
         .element1{
             width: 320px;
             height: 44px;
@@ -28,13 +64,169 @@
         .element1::placeholder{
             color: rgba(31, 32, 65, 0.25) ;
         }
+        .element2Title{
+            margin-top: 20.44px;
+            display: flex;
+            &-1{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                margin-right: 151.74px;
+                @include title1;
+            }
+            &-2{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                @include title2;
+            }
+        }
+        .element2{
+            width: 320px;
+            height: 44px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 15px;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+        .element2::placeholder{
+            color: rgba(47, 51, 155, 0.75) ;
+        }
+        .element3Title{
+            margin-top: 20.44px;
+            display: flex;
+            &-1{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                margin-right: 181.74px;
+                @include title1;
+            }
+            &-2{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                @include title2;
+            }
+        }
+        .element3{
+            width: 320px;
+            height: 44px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 15px;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+        .element3::placeholder{
+            color: rgba(47, 51, 155, 0.75) ;
+        }
+        .element4Title{
+            margin-top: 22.56px;
+            display: flex;
+            &-1{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                margin-right: 132.74px;
+                @include title1;
+            }
+            &-2{
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 5px;
+                @include title2;
+            }
+        }
+        .element4{
+            width: 320px;
+            height: 44px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            padding-left: 15px;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+        .element4::placeholder{
+            color: rgba(47, 51, 155, 0.75) ;
+        }
+        .element5{
+            display: flex;
+            margin-top: 40px;
+            &-input1{
+                .input1Title{
+                    margin: 0px;
+                    padding: 0px;
+                    margin-bottom: 5.44px;
+                    @include title1;
+                }
+                #input1{
+                    width: 150px;
+                    height: 44px;
+                    margin-right: 20px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-left: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    color: rgba(31, 32, 65, 0.75);
+                }
+            }
+            &-input2{
+                .input2Title{
+                    margin: 0px;
+                    padding: 0px;
+                    margin-bottom: 5.44px;
+                    @include title1;
+                }
+                #input2{
+                    width: 150px;
+                    height: 44px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-left: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    color: rgba(31, 32, 65, 0.75);
+                }
+            }
+        }
+    }
     &-block2{
     
     }
     &-block3{
 
     }
-    }
+    
 }
-   
+
 

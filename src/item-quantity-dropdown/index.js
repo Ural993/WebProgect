@@ -7,8 +7,9 @@
   const defaults = {
     maxItems: Infinity,
     minItems: 0,
-    selectionText: 'item',
-    textPlural: 'items',
+    selectionText: 'гость',
+    textPlural: 'гостя',
+    txt:['гость','гостя','гостей'],
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-content',
@@ -19,10 +20,27 @@
     onChange: () => {},
     beforeDecrement: () => true,
     beforeIncrement: () => true,
-    setSelectionText (itemCount, totalItems) {
-      const usePlural = totalItems !== 1 && this.textPlural.length > 0;
-      const text = usePlural ? this.textPlural : this.selectionText;
-      return `${totalItems} ${text}`;
+    setSelectionText (txt, totalItems) {
+      debugger
+      cases = [2, 0, 1, 1, 1, 2];  
+      return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
+      cases[(totalItems%10<5)?totalItems%10:5] ]}`; 
+
+      // if(totalItems == 1) {
+      //   const text = this.selectionText;
+      //   return `${totalItems} ${text}`;
+      // } else if (totalItems >1 && totalItems <5){
+      //   const text = this.textPlural;
+      //   return `${totalItems} ${text}`;
+      // } 
+      // else if (totalItems == 0){
+      //   const text = this.textPlural;
+      //   return `${totalItems} ${text}`;
+      // }
+     
+      // const usePlural = totalItems !== 1 && this.textPlural.length > 0;
+      // const text = usePlural ? this.textPlural : this.selectionText;
+      // return `${totalItems} ${text}`;
     },
   };
 

@@ -14,4 +14,7 @@ import './assets/scss/main.scss'
 jQuery(function($){
 	$('.date').mask('99.99.9999');
 });
+$(document).ready(() => {
+	$('.iqdropdown').iqDropdown({ });
+  });
 

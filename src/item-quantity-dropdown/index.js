@@ -21,10 +21,12 @@
     beforeDecrement: () => true,
     beforeIncrement: () => true,
     setSelectionText (txt, totalItems) {
-      debugger
+      if(totalItems === 0){
+        return 'Сколько гостей'; 
+      }else{
       cases = [2, 0, 1, 1, 1, 2];  
       return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
-      cases[(totalItems%10<5)?totalItems%10:5] ]}`; 
+      cases[(totalItems%10<5)?totalItems%10:5] ]}`; }
 
       // if(totalItems == 1) {
       //   const text = this.selectionText;
@@ -46,6 +48,7 @@
 
   $.fn.iqDropdown = function (options) {
     this.each(function () {
+      debugger
       const $this = $(this);
       const $selection = $this.find('p.iqdropdown-selection').last();
       const $menu = $this.find('div.iqdropdown-menu');
@@ -135,6 +138,7 @@
       });
 
       $items.each(function () {
+        debugger
         const $item = $(this);
         const id = $item.data('id');
         const defaultCount = Number($item.data('defaultcount') || '0');
@@ -151,3 +155,4 @@
     return this;
   };
 }(jQuery));
+

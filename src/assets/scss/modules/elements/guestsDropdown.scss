@@ -1,0 +1,29 @@
+.element3Title{
+    margin-top: 20.44px;
+    display: flex;
+    &-1{
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 5px;
+        margin-right: 181.74px;
+        @include title1;
+    }
+}
+.element3{
+    width: 320px;
+    height: 44px;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: rgba(31, 32, 65, 0.75);
+}
+.element3::placeholder{
+    color: rgba(47, 51, 155, 0.75) ;
+}

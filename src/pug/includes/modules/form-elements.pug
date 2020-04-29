@@ -2,54 +2,13 @@
   img(src="/assets/img/Group.svg")
 .section-formElements
  .section-formElements-block1
-   .element1Title
-     p.element1Title-1 TEXT FIELD
-     p.element1Title-2 DEFAULT
-   input(type=" text" class="element1" placeholder="Email")
-   .element2Title
-     p.element2Title-1 TEXT FIELD
-     p.element2Title-2 HOVER/FOCUS
-   input(type=" text" class="element2" placeholder="This is pretty awesome")
-   .element3Title
-     p.element3Title-1 DROPDOWN
-     p.element3Title-2 DEFAULT
-   input(type=" text" class="element3" placeholder="Сколько гостей")
-   .element4Title
-     p.element4Title-1 MASKED TEXT FIELD
-     p.element4Title-2 DEFAULT
-   input(type=" text" class="element4 date" placeholder="ДД.ММ.ГГГГ" )
-   .element5
-    .element5-input1
-     p.input1Title DATE DROPDOWN
-     <input type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="input1" placeholder="ДД.ММ.ГГГГ"/>
-    .element5-input2 
-     p.input2Title DATE DROPDOWN
-     <input type="text"  id="input2" placeholder="ДД.ММ.ГГГГ"/>
+   include ./elements/textFieldEmail.pug
+   include ./elements/textField.pug
+   include ./elements/guestsDropdown.pug
+   include ./elements/maskedTextField.pug
+   include ./elements/dateDropdown.pug
  .section-formElements-block2
-  .checkboxButton
-   .checkboxButton-title
-     p.checkboxButton-title-1 CHECKBOX BUTTONS
-   .checkboxButton-block1
-    input(type="checkbox" class="checkboxButton-block1-input1" )
-    p.checkboxButton-block1-text1 Можно курить
-   .checkboxButton-block2
-    input(type="checkbox" class="checkboxButton-block2-input2" )
-    p.checkboxButton-block2-text2 Можно с питомцами
-   .checkboxButton-block3
-    input(type="checkbox" class="checkboxButton-block3-input3" )
-    p.checkboxButton-block3-text3 Можно пригласить гостей <br/> (до 10 человек)
-   .iqdropdown
-     p.iqdropdown-selection
-     .iqdropdown-menu
-      .iqdropdown-menu-option(data-id="item1")
-       div
-         p.iqdropdown-item ВЗРОСЛЫЕ
-      .iqdropdown-menu-option(data-id="item2")
-       div
-         p.iqdropdown-item ДЕТИ
-      .iqdropdown-menu-option(data-id="item3")
-       div
-         p.iqdropdown-item МЛАДЕНЦЫ
+   include ./elements/checkboxButtons.pug
  .section-formElements-block3
 
 

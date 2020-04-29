@@ -1,0 +1,104 @@
+
+.checkboxButton{
+    opacity: 0;
+}
+label{
+    position: relative;
+}
+
+label::before{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    display: inline-block;
+    content: '';
+    left: -20px;
+    
+
+}
+
+label::after {
+    top:7px;
+    left: -15px;
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 6px;
+    border-radius: 1px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);   
+    content: none;
+}
+
+.checkboxButton:checked + label::after{
+    content: '';
+}
+
+.checkboxButton{
+    &-title{
+        &-1{
+            margin: 0px;
+            padding: 0px;
+            @include title1;
+        }
+    }
+    &-block1{
+        display: flex;
+     
+        &-text{
+            margin: 0px;
+            margin-top: 17.12px;
+            padding: 0px;
+            padding-left: 9.74px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+    &-block2{
+        display: flex;
+        margin-top: 12px;
+
+        &-text{
+            margin: 0px;
+            margin-top: 1px;
+            padding: 0px;
+            padding-left: 10px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+
+        }
+    }
+    &-block3{
+        display: flex;
+        margin-top: 11.5px;
+
+        &-text{
+            margin: 0px;
+            margin-top: 1px;
+            padding: 0px;
+            padding-left: 10px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+
+        }
+    }
+}

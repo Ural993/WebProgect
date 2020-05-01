@@ -30,7 +30,9 @@
     }
     &-block2{
         @import "./elements/checkboxButtons.scss";
-    
+        @import "./elements/radioButtons.scss";
+        @import "./elements/toggleButton.scss";
+        @import "./elements/likeButton.scss";
     }
     &-block3{
 

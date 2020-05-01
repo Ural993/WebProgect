@@ -1,0 +1,74 @@
+
+.toggleButton{
+    margin-top: 40.56px;
+    .toggleButton-title{
+        margin: 0px;
+        padding: 0px;
+        @include title1;
+    }
+        &__block{
+          display: flex;
+          margin-top: 16px;
+          .toggleButton-text{
+                margin: 0px;
+                padding: 0px;
+                margin-left: 6px;
+                font-family: 'Montserrat-Regular';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.5);
+                vertical-align: 3px;
+            }
+        }
+}
+.toggleButton-input{
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    position: absolute;
+    
+}
+.toggleButton-label {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.toggleButton-label:before {
+    content: "";
+    position: relative;
+    top: 2px;
+    width:40px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.toggleButton-label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    transform: translateX(0px);
+    transition: all .2s ease;
+}
+
+
+.toggleButton-input:checked + .toggleButton-label:after {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    transform: translateX(20px);
+    transition: all .3s ease;
+}
+
+.toggleButton-input:checked + .toggleButton-label::before {
+    border: 1px solid #BC9CFF; 
+}

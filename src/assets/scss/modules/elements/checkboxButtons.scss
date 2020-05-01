@@ -2,11 +2,12 @@
 .checkboxButton{
     opacity: 0;
 }
-label{
+.checkboxButtons-text{
     position: relative;
+    cursor: pointer;
 }
 
-label::before{
+.checkboxButtons-text::before{
     position: absolute;
     width: 20px;
     height: 20px;
@@ -19,16 +20,22 @@ label::before{
 
 }
 
-label::after {
+.checkboxButtons-text::after {
     top:7px;
     left: -15px;
     position: absolute;
     display: inline-block;
     width: 8px;
     height: 6px;
-    border-radius: 1px;
+    border-radius: 0;
     border-left: 2px solid;
     border-bottom: 2px solid;
+    border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -moz-border-image:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    -webkit-border-image:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-color: transparent;
+    border-image-slice: 1;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -37,22 +44,25 @@ label::after {
     content: none;
 }
 
-.checkboxButton:checked + label::after{
+.checkboxButton:checked + .checkboxButtons-text::after{
     content: '';
 }
+.checkboxButton:checked + .checkboxButtons-text::before{
+    border: 1px solid #BC9CFF;
+}
 
-.checkboxButton{
-    &-title{
-        &-1{
+.checkboxButtons{
+    &__title-wrapper{
+        .checkboxButtons-title{
             margin: 0px;
             padding: 0px;
             @include title1;
         }
     }
-    &-block1{
+    &__block1{
         display: flex;
      
-        &-text{
+        &__text{
             margin: 0px;
             margin-top: 17.12px;
             padding: 0px;
@@ -65,11 +75,11 @@ label::after {
             color: rgba(31, 32, 65, 0.5);
         }
     }
-    &-block2{
+    &__block2{
         display: flex;
         margin-top: 12px;
 
-        &-text{
+        &__text{
             margin: 0px;
             margin-top: 1px;
             padding: 0px;
@@ -83,11 +93,11 @@ label::after {
 
         }
     }
-    &-block3{
+    &__block3{
         display: flex;
         margin-top: 11.5px;
 
-        &-text{
+        &__text{
             margin: 0px;
             margin-top: 1px;
             padding: 0px;

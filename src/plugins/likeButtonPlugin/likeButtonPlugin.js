@@ -2,7 +2,6 @@
 (function ($) {
   
     $.fn.likeButtonPlugin = function () {
-     this.each(function(){
         let itemCount = 9;
         const $this = $(this);
         const $heart = $('.likeButton-heart');
@@ -12,7 +11,6 @@
         $('.likeButton__block').append($counter);
 
         $this.click(() => {
-          debugger
           let heart = $heart.css('display');
             if(heart == 'none'){
               $heart.css('display', 'block');
@@ -26,7 +24,7 @@
               $border.css('border-color', 'rgba(31, 32, 65, 0.25)');
             }
           });
-     })
+     
     }
   }(jQuery));
   

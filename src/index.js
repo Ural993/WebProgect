@@ -5,6 +5,7 @@ import 'popper.js'
 import './air-datepiker/js/datepicker';
 import './item-quantity-dropdown/index';
 import './plugins/jquery.maskedinput-master/src/jquery.maskedinput';
+import './plugins/likeButtonPlugin/likeButtonPlugin';
 
 // SCSS
 import './assets/scss/main.scss'
@@ -20,3 +21,7 @@ jQuery(function($){
 jQuery(function($){
 	$('.iqdropdown').iqDropdown();
 });
+jQuery(function($){
+	$('.likeButton__block').likeButtonPlugin();
+});
+

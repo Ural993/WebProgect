@@ -48,7 +48,6 @@
 
   $.fn.iqDropdown = function (options) {
     this.each(function () {
-      debugger
       const $this = $(this);
       const $selection = $this.find('p.iqdropdown-selection').last();
       const $menu = $this.find('div.iqdropdown-menu');
@@ -138,7 +137,6 @@
       });
 
       $items.each(function () {
-        debugger
         const $item = $(this);
         const id = $item.data('id');
         const defaultCount = Number($item.data('defaultcount') || '0');

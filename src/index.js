@@ -3,10 +3,11 @@ import './js/'
 import 'jquery';
 import 'popper.js'
 import './air-datepiker/js/datepicker';
-import './item-quantity-dropdown/index';
+import './plugins/item-quantity-dropdown/index';
 import './plugins/jquery.maskedinput-master/src/jquery.maskedinput';
 import './plugins/likeButtonPlugin/likeButtonPlugin';
 import './plugins/rateButtonsPlugin/rateButtonsPlugin';
+import './plugins/rangeSliderPlugin/rangeSliderPlugin';
 
 // SCSS
 import './assets/scss/main.scss'
@@ -27,6 +28,9 @@ jQuery(function($){
 });
 jQuery(function($){
 	$('.rateButton__block').rateButtonsPlugin();
+});
+jQuery(function($){
+	$('.range').rangeSliderPlugin();
 });
 
 

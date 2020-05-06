@@ -22,6 +22,9 @@
     border-radius: 4px;
     color: rgba(31, 32, 65, 0.25);
 }
+.element1:focus{
+    outline: none;
+}
 .element1::placeholder{
     color: rgba(31, 32, 65, 0.25) ;
 }

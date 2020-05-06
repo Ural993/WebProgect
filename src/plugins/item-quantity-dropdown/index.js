@@ -10,6 +10,7 @@
     selectionText: 'гость',
     textPlural: 'гостя',
     txt:['гость','гостя','гостей'],
+    txt2:['младенец','младенца','младенцев'],
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-content',
@@ -21,30 +22,34 @@
     beforeDecrement: () => true,
     beforeIncrement: () => true,
     setSelectionText (txt, totalItems) {
+     
       if(totalItems === 0){
+        $('.button-clear').css('opacity', '0');
+        $('.button-clear').css('cursor', 'auto');
+
         return 'Сколько гостей'; 
-      }else{
+      }
+      else if(txt.item3 >=1) {
+        let childrenCount = this.childrenCountFunction(txt.item3);
+        //totalItems = totalItems -txt.item3;
+        cases = [2, 0, 1, 1, 1, 2];  
+        return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
+        cases[(totalItems%10<5)?totalItems%10:5] ]}, ${childrenCount}`; }
+      else {
+        $('.button-clear').css('opacity', '1'); 
+        $('.button-clear').css('cursor', 'pointer');  
       cases = [2, 0, 1, 1, 1, 2];  
       return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
       cases[(totalItems%10<5)?totalItems%10:5] ]}`; }
-
-      // if(totalItems == 1) {
-      //   const text = this.selectionText;
-      //   return `${totalItems} ${text}`;
-      // } else if (totalItems >1 && totalItems <5){
-      //   const text = this.textPlural;
-      //   return `${totalItems} ${text}`;
-      // } 
-      // else if (totalItems == 0){
-      //   const text = this.textPlural;
-      //   return `${totalItems} ${text}`;
-      // }
-     
-      // const usePlural = totalItems !== 1 && this.textPlural.length > 0;
-      // const text = usePlural ? this.textPlural : this.selectionText;
-      // return `${totalItems} ${text}`;
     },
-  };
+    childrenCountFunction(totalItems){
+      cases = [2, 0, 1, 1, 1, 2];
+      return `${totalItems} ${this.txt2[ (totalItems%100>4 && totalItems%100<20)? 2 : 
+        cases[(totalItems%10<5)?totalItems%10:5] ]}`; },
+  
+    }
+   
+  ;
 
   $.fn.iqDropdown = function (options) {
     this.each(function () {
@@ -59,6 +64,8 @@
       const settings = $.extend(true, {}, defaults, dataAttrOptions, options);
       const itemCount = {};
       let totalItems = 0;
+      const $clearButton = $('.button-clear');
+      const $applyButton = $('.button-apply');
 
       function updateDisplay () {
         $selection.html(settings.setSelectionText(itemCount, totalItems));
@@ -86,8 +93,9 @@
             <i class="icon-decrement icon-increment"></i>
           </button>
         `);
+        
+        const $buttonsWrapper = $('.iqdropdown-buttons');
         const $counter = $(`<span>${itemCount[id]}</span>`).addClass(settings.controls.counterCls);
-
         $item.children('div').addClass(settings.controls.displayCls);
         $controls.append($decrementButton, $counter, $incrementButton);
 
@@ -126,11 +134,28 @@
 
           event.preventDefault();
         });
+        $clearButton.click(() =>{
+          const { items, maxItems, beforeIncrement, onChange } = settings;
+          $items.each(function () {
+          const $item = $(this);
+          const id = $item.data('id');
+          itemCount[id] = 0;
+          totalItems = 0;
+          $counter.html(itemCount[id]);
+          updateDisplay();
+          onChange(id, itemCount[id], totalItems);
+        });
+      });
+        $applyButton.click(() =>{
+          $this.toggleClass('menu-open');
+        })
 
         $item.click(event => event.stopPropagation());
+        $buttonsWrapper.click(event => event.stopPropagation());
 
         return $item;
       }
+
 
       $this.click(() => {
         $this.toggleClass('menu-open');
@@ -145,6 +170,11 @@
         totalItems += defaultCount;
         setItemSettings(id, $item);
         addControls(id, $item);
+          if(totalItems >= 1){
+            
+           $clearButton.css('opacity', '1');  
+        }
+
       });
 
       updateDisplay();

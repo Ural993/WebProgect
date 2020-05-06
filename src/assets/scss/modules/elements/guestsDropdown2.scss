@@ -1,0 +1,15 @@
+.element3Title{
+    margin-top: 196px;
+    display: flex;
+    &-1{
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 5px;
+        margin-right: 181.74px;
+        @include title1;
+    }
+}
+
+.element3::placeholder{
+    color: rgba(47, 51, 155, 0.75) ;
+}

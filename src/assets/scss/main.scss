@@ -6,8 +6,9 @@
 @import "modules/color&text";
 @import "modules/cards";
 @import "modules/form-elements.scss";
-@import "../../air-datepiker/css/datepicker.css";
-@import "../../plugins/item-quantity-dropdown/styles/item-quantity-dropdown.min.css";
+@import "../../plugins/air-datepiker/css/datepicker.css";
+@import "../../plugins/guestsDropdownPlugin/styles/item-quantity-dropdown.min.css";
+@import "../../plugins/comfortDropdownPlugin/styles/item-quantity-dropdown.min.css";
 
 
 html {

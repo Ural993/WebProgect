@@ -8,9 +8,9 @@
     maxItems: Infinity,
     minItems: 0,
     selectionText: 'гость',
-    textPlural: 'гостя',
-    txt:['гость','гостя','гостей'],
-    txt2:['младенец','младенца','младенцев'],
+    textPlural: 'гостя',  
+    txt:['спальня','спальни','спален'],
+    txt2:['кровать','кровати','кроватей'],
     controls: {
       position: 'right',
       displayCls: 'iqdropdown-content',
@@ -22,22 +22,33 @@
     beforeDecrement: () => true,
     beforeIncrement: () => true,
     setSelectionText (txt, totalItems) {
-     
+      
       if(totalItems === 0){
         $('.button-clear').css('opacity', '0');
         $('.button-clear').css('cursor', 'auto');
-
-        return 'Сколько гостей'; 
-      }
-      else if(txt.item3 >=1) {
-        let childrenCount = this.childrenCountFunction(txt.item3);
-        //totalItems = totalItems -txt.item3;
+        let bedCount = this.childrenCountFunction(txt.item2);
         cases = [2, 0, 1, 1, 1, 2];  
         return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
-        cases[(totalItems%10<5)?totalItems%10:5] ]}, ${childrenCount}`; }
-      else {
+        cases[(totalItems%10<5)?totalItems%10:5] ]}, ${bedCount}`; 
+      }
+      else if(txt.item2 >=1) {
         $('.button-clear').css('opacity', '1'); 
         $('.button-clear').css('cursor', 'pointer');  
+        let bedCount = this.childrenCountFunction(txt.item2);
+        totalItems = totalItems -txt.item3;
+        totalItems = totalItems -txt.item2;
+        cases = [2, 0, 1, 1, 1, 2];  
+        return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
+        cases[(totalItems%10<5)?totalItems%10:5] ]}, ${bedCount}`; }
+        else if(txt.item3 >=1) {
+        $('.button-clear').css('opacity', '1'); 
+        $('.button-clear').css('cursor', 'pointer');  
+          totalItems = totalItems -1;
+          }
+      else {
+        $('.button-clear').css('opacity', '1'); 
+        $('.button-clear').css('cursor', 'pointer');
+        let bedCount = this.childrenCountFunction(txt.item2);  
       cases = [2, 0, 1, 1, 1, 2];  
       return `${totalItems} ${this.txt[ (totalItems%100>4 && totalItems%100<20)? 2 : 
       cases[(totalItems%10<5)?totalItems%10:5] ]}`; }
@@ -51,7 +62,7 @@
    
   ;
 
-  $.fn.iqDropdown = function (options) {
+  $.fn.comfortDropdownPlugin = function (options) {
     this.each(function () {
       const $this = $(this);
       const $selection = $this.find('p.iqdropdown-selection').last();
@@ -165,13 +176,11 @@
         const $item = $(this);
         const id = $item.data('id');
         const defaultCount = Number($item.data('defaultcount') || '0');
-
         itemCount[id] = defaultCount;
         totalItems += defaultCount;
         setItemSettings(id, $item);
         addControls(id, $item);
-          if(totalItems >= 1){
-            
+          if(totalItems >= 1){  
            $clearButton.css('opacity', '1');  
         }
 

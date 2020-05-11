@@ -2,8 +2,9 @@
 import './js/'
 import 'jquery';
 import 'popper.js'
-import './air-datepiker/js/datepicker';
-import './plugins/item-quantity-dropdown/index';
+import './plugins/air-datepiker/js/datepicker';
+import './plugins/guestsDropdownPlugin/index';
+import './plugins/comfortDropdownPlugin/index';
 import './plugins/jquery.maskedinput-master/src/jquery.maskedinput';
 import './plugins/likeButtonPlugin/likeButtonPlugin';
 import './plugins/rateButtonsPlugin/rateButtonsPlugin';
@@ -21,7 +22,10 @@ jQuery(function($){
 
  
 jQuery(function($){
-	$('.iqdropdown').iqDropdown();
+	$('.iqdropdown').comfortDropdownPlugin();
+});
+jQuery(function($){
+	$('.guestsdropdown').guestsDropdownPlugin();
 });
 jQuery(function($){
 	$('.likeButton__block').likeButtonPlugin();

@@ -8,7 +8,6 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    text-transform: uppercase;
     color: #1F2041;
 }
 
@@ -26,18 +25,41 @@
         @import "./elements/maskedTextField.scss";
         @import "./elements/dateDropdown.scss";
         @import "./elements/comfortDropdown.scss";
+        @import "./elements/checkboxList.scss";
+      .textFieldWrapper {
+        margin-top: 20.44px;
+      } 
+      .guestsDropdownWrapper{
+        margin-top: 20.44px;
+      }
+      .maskedTextFieldWrapper {
+        margin-top: 22.56px;
+      }
+      .dateDropdownWrapper{
+        margin-top: 40px;
+      }
+      .comfortDropdownWrapper{
+        margin-top: 309.56px;
+      }
+      .checkboxListWrapper{
+          margin-top: 320px;;
+      }  
+        
         
     }
     &-block2{
+      margin-right: 92px;
         @import "./elements/checkboxButtons.scss";
         @import "./elements/radioButtons.scss";
         @import "./elements/toggleButton.scss";
         @import "./elements/likeButton.scss";
         @import "./elements/rateButton.scss";
+        @import "./elements/richCheckboxButtons.scss";
         
     }
     &-block3{
-        @import "./elements/rangeSlider.scss";
+      @import "./elements/rangeSlider.scss";
+      @import "./elements/bulletList.scss";
 
     }
     

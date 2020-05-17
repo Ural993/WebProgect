@@ -2,19 +2,29 @@
   img(src="/assets/img/Group.svg")
 .section-formElements
  .section-formElements-block1
-   include ./elements/textFieldEmail.pug
-   include ./elements/textField.pug
-   include ./elements/guestsDropdown.pug
-   include ./elements/maskedTextField.pug
-   include ./elements/dateDropdown.pug
-   include ./elements/comfortDropdown.pug
+   .textFieldEmailWrapper 
+     include ./elements/textFieldEmail.pug
+   .textFieldWrapper 
+     include ./elements/textField.pug
+   .guestsDropdownWrapper  
+     include ./elements/guestsDropdown.pug
+   .maskedTextFieldWrapper  
+     include ./elements/maskedTextField.pug
+   .dateDropdownWrapper  
+     include ./elements/dateDropdown.pug
+   .comfortDropdownWrapper  
+     include ./elements/comfortDropdown.pug
+   .checkboxListWrapper 
+     include ./elements/checkboxList.pug
  .section-formElements-block2
-   include ./elements/checkboxButtons.pug
-   include ./elements/radioButtons.pug
-   include ./elements/toggleButton.pug
-   include ./elements/likeButton.pug
-   include ./elements/rateButton.pug
+     include ./elements/checkboxButtons.pug
+     include ./elements/radioButtons.pug
+     include ./elements/toggleButton.pug
+     include ./elements/likeButton.pug
+     include ./elements/rateButton.pug
+     include ./elements/richCheckboxButtons.pug
  .section-formElements-block3
-   include ./elements/rangeSlider.pug
+     
+     include ./elements/bulletList.pug
 
 

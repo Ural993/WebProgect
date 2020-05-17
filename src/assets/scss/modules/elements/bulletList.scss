@@ -1,0 +1,43 @@
+
+.bulletList{
+    margin-top: 1052.56px;
+    &__title{
+        margin: 0px;
+        padding: 0px;
+        @include title1;
+    }
+        &__block{
+          margin-top: 14px;
+            &__1{
+              display: flex;
+                }
+            &__2{
+              display: flex;
+              margin-top: 10px;
+                }
+            &__3{
+              display: flex;
+              margin-top: 10px;
+                }
+        }
+}
+
+.bulletList-bullet{
+    margin-top: 7px;
+    width: 10.43px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+}
+.bulletList-text{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10.43px;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+

@@ -1,0 +1,164 @@
+
+.checkboxListElement{
+    opacity: 0;
+}
+.checkboxList-text{
+    position: relative;
+    cursor: pointer;
+}
+
+.checkboxList-text::before{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    display: inline-block;
+    content: '';
+    left: -20px;
+    
+
+}
+
+.checkboxList-text::after {
+    top:7px;
+    left: -15px;
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 6px;
+    border-radius: 0;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -moz-border-image:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    -webkit-border-image:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-color: transparent;
+    border-image-slice: 1;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);   
+    content: none;
+}
+
+.checkboxListElement:checked + .checkboxList-text::after{
+    content: '';
+}
+.checkboxListElement:checked + .checkboxList-text::before{
+    border: 1px solid #BC9CFF;
+}
+.checkboxList__blocks{
+    margin-top: 17px;
+}
+.checkboxList{
+    &__title{  
+            margin: 0px;
+            padding: 0px;
+            cursor: pointer;
+            @include title1;
+    }
+    &__block1{
+        display: flex;
+       
+    }
+    &__block2{
+        display: flex;
+        margin-top: 10.56px;
+    }
+    &__block3{
+        display: flex;
+        margin-top: 11px;
+    }
+    &__block4{
+        display: flex;
+        margin-top: 10px;
+    }
+    &__block5{
+        display: flex;
+        margin-top: 12px;
+    }
+    &__block6{
+        display: flex;
+        margin-top: 10px;
+    }
+}
+.checkboxList__title li {
+position: absolute;
+display: none;
+}
+.checkboxList__title{
+    position: relative;
+}
+.checkboxList__title:after{
+    content: '';
+    top: 2px;
+    left: 240px;
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 0;
+    border-left: 2px solid rgba(31, 32, 65, 0.75);
+    border-bottom: 2px solid rgba(31, 32, 65, 0.75);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);   
+}
+
+
+.checkboxList__title:before {
+   top: 4px;
+   left: 240px;
+   position: absolute;
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   border-radius: 0;
+   border-left: 2px solid rgba(31, 32, 65, 0.75);
+   border-bottom: 2px solid rgba(31, 32, 65, 0.75);
+   -webkit-transform: rotate(-225deg);
+   -moz-transform: rotate(-225deg);
+   -o-transform: rotate(-225deg);
+   -ms-transform: rotate(-225deg);
+   transform: rotate(-225deg);
+    }
+.checkboxList-text{
+    margin: 0px;
+            margin-top: 1px;
+            padding: 0px;
+            padding-left: 10px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+}
+
+.checkboxList {
+    position: relative; /* Относительное позиционирование */
+   }
+   .checkboxList input, .checkboxList ul { display: none; /* Прячем */ }
+   .checkboxList label {
+    cursor: pointer; /* Вид курсора */
+   }
+   .checkboxList ul {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px;
+    top: 17px;
+   }
+   .checkboxList :checked ~ ul {
+    display: inline-block; /* Показываем меню */
+   }
+  
+   .checkboxLists:checked + .checkboxList__title:before {
+    content: ''; /* Показываем меню */
+   }
+   .checkboxLists:checked + .checkboxList__title:after {
+    content: none; /* Показываем меню */
+   }

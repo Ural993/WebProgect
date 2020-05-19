@@ -1,7 +1,9 @@
 @import "./mixins.scss";
-@include littleInput;
 @include bigBtn;
-@include bigInputWithIMG;
+@include littleBtnActiveWithBackground;
+@include littleBtnNotActiveWithBackground;
+@include littleBtnActiveWithoutBackground;
+@include littleBtnNotActiveWithoutBackground;
 @mixin title1 {
     font-family: 'Montserrat-Regular';
     font-style: normal;
@@ -55,11 +57,37 @@
         @import "./elements/likeButton.scss";
         @import "./elements/rateButton.scss";
         @import "./elements/richCheckboxButtons.scss";
-        
+        .checkboxButtonsWrapper{}
+        .radioButtonsWrapper{
+          margin-top: 40.88px;
+        }
+        .toggleButtonWrapper{
+          margin-top: 40.56px;
+        }
+        .likeButtonWrapper{
+          margin-top: 78.44px;
+        }  
+        .rateButtonWrapper{
+          margin-top: 42px;
+        }
+        .richCheckboxButtonsWrapper{
+          margin-top: 514px;
+        }
     }
     &-block3{
       @import "./elements/rangeSlider.scss";
       @import "./elements/bulletList.scss";
+      .buttonsWrapper{
+        .littleBtnWithBackground{
+          display: flex;
+          .littleBtnActiveWithBackground{
+            margin-right: 19px;
+          }
+        }
+      }
+      .bulletListWrapper{
+        margin-top: 1052.56px;
+      }
 
     }
     

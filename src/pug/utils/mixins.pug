@@ -1,21 +1,16 @@
-mixin bigBtn(title)
- .button-wrapper
-  .button= title
+mixin bigBtn(text)
+ button.bigBtn-button
+  .bigBtn-text= text
     img(src="/assets/img/arrow_forward.svg")
-mixin littleInput(title)
-  .litInp
-    .litInpTitle=title
-    input(type="text" placeholder ="ДД.ММ.ГГГГ")
-    .litInpDate
-      p ДД.ММ.ГГГГ
-      img(src="/assets/img/expand_more.svg")
-mixin bigInputWithIMG(title1, title2, img)
-  .bigInp
-    .bigInpTitle= title1   
-    .bigInpDate
-      p= title2
-      if(img)      
-        img(src="/assets/img/expand_more.svg")
-mixin bigInput(title1)
-    .bigInpDate
-      p= title1  
+mixin littleBtnActiveWithBackground(text)
+ button.littleBtnActiveWithBackground-button
+  .littleBtnActiveWithBackground-text= text 
+mixin littleBtnNotActiveWithBackground(text)
+ button.littleBtnNotActiveWithBackground-button
+  .littleBtnNotActiveWithBackground-text= text
+mixin littleBtnActiveWithoutBackground(text)
+ button.littleBtnActiveWithoutBackground-button
+  .littleBtnActiveWithoutBackground-text= text
+mixin littleBtnNotActiveWithoutBackground(text)
+ button.littleBtnNotActiveWithoutBackground-button
+  .littleBtnNotActiveWithoutBackground-text= text            

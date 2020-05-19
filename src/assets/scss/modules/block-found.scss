@@ -1,7 +1,6 @@
 @import "./mixins.scss";
-@include littleInput;
 @include bigBtn;
-@include bigInputWithIMG;
+
     //---Блок поиска номера--
     &-found{
         width: 380px;

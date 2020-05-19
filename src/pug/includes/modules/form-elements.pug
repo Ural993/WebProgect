@@ -17,14 +17,26 @@
    .checkboxListWrapper 
      include ./elements/checkboxList.pug
  .section-formElements-block2
+   .checkboxButtonsWrapper 
      include ./elements/checkboxButtons.pug
+   .radioButtonsWrapper
      include ./elements/radioButtons.pug
+   .toggleButtonWrapper  
      include ./elements/toggleButton.pug
+   .likeButtonWrapper  
      include ./elements/likeButton.pug
+   .rateButtonWrapper  
      include ./elements/rateButton.pug
+   .richCheckboxButtonsWrapper  
      include ./elements/richCheckboxButtons.pug
  .section-formElements-block3
-     
+   .buttonsWrapper
+     .littleBtnWithBackground
+       .littleBtnActiveWithBackground 
+         +littleBtnActiveWithBackground("CLICK ME")
+       .littleBtnNotActiveWithBackground
+         +littleBtnNotActiveWithBackground("CLICK ME")
+   .bulletListWrapper  
      include ./elements/bulletList.pug
 
 

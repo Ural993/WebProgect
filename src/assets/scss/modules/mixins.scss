@@ -30,9 +30,10 @@
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         color: white;
         border: none;
+        cursor: pointer;
         .littleBtnActiveWithBackground-text{
-            margin-left: 19px;
-            font-family: $Montserrat-Regular;
+            margin-left: 15px;
+            font-family: 'Montserrat-Bold';
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
@@ -51,8 +52,9 @@
         color: white;
         border: none;
         opacity: 0.5;
+        cursor: pointer;
         .littleBtnNotActiveWithBackground-text{
-            margin-left: 19px;
+            margin-left: 15px;
             font-family: $Montserrat-Regular;
             font-style: normal;
             font-weight: bold;
@@ -63,44 +65,67 @@
 }}
 @mixin littleBtnActiveWithoutBackground{
     .littleBtnActiveWithoutBackground-button{
-        display: flex;
-        align-items: center;
+        position: relative;
         width: 99px;
         height: 44px;
         border-radius: 22px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        color: white;
+        background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border: none;
-        .littleBtnActiveWithoutBackground-text{
-            margin-left: 19px;
-            font-family: $Montserrat-Regular;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-        }
-        
-}}
+        cursor: pointer;
+        .littleBtnActiveWithoutBackground-winner{
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 95px;
+            height: 40px;
+            background: white;
+            border-radius: 22px;
+            .littleBtnActiveWithoutBackground-text{
+                font-family: $Montserrat-Regular;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                color: #BC9CFF;
+            }
+        }    
+   }
+}
 @mixin littleBtnNotActiveWithoutBackground{
     .littleBtnNotActiveWithoutBackground-button{
-        display: flex;
-        align-items: center;
+        position: relative;
         width: 99px;
         height: 44px;
         border-radius: 22px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        color: white;
+        background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border: none;
-        .littleBtnNotActiveWithoutBackground-text{
-            margin-left: 19px;
-            font-family: $Montserrat-Regular;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-        }
-        
-}}
+        opacity: 0.5;
+        cursor: pointer;
+        .littleBtnNotActiveWithoutBackground-winner{
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 95px;
+            height: 40px;
+            background: white;
+            border-radius: 22px;
+            .littleBtnNotActiveWithoutBackground-text{
+                font-family: $Montserrat-Regular;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                color: #BC9CFF;
+            }
+        }    
+   }
+}
 // @mixin littleInput{
 //     .litInp{
 //         display: flex;

@@ -78,9 +78,17 @@
       @import "./elements/rangeSlider.scss";
       @import "./elements/bulletList.scss";
       .buttonsWrapper{
+        margin-top: 118.56px;
         .littleBtnWithBackground{
           display: flex;
           .littleBtnActiveWithBackground{
+            margin-right: 19px;
+          }
+        }
+        .littleBtnWithoutBackground{
+          display: flex;
+          margin-top: 30px;
+          .littleBtnActiveWithoutBackground{
             margin-right: 19px;
           }
         }

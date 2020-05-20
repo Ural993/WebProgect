@@ -4,6 +4,8 @@
 @include littleBtnNotActiveWithBackground;
 @include littleBtnActiveWithoutBackground;
 @include littleBtnNotActiveWithoutBackground;
+@include btnTextWithLightColor;
+@include btnTextWithDarckColor;
 @mixin title1 {
     font-family: 'Montserrat-Regular';
     font-style: normal;
@@ -90,6 +92,13 @@
           margin-top: 30px;
           .littleBtnActiveWithoutBackground{
             margin-right: 19px;
+          }
+        }
+        .btnText{
+          margin-top: 31px;
+          display: flex;
+          .rightbtnText{
+            margin-left: 20px;
           }
         }
       }

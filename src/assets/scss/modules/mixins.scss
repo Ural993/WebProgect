@@ -1,5 +1,5 @@
 @mixin bigBtn{
-    .button{
+    .bigBtn-button{
         display: flex;
         align-items: center;
         width: 320px;
@@ -8,7 +8,7 @@
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         color: white;
         border: none;
-        .text{
+        .bigBtn-text{
             margin-left: 80px;
             font-family: $Montserrat-Regular;
             font-style: normal;

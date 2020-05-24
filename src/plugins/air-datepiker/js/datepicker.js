@@ -57,7 +57,7 @@
             prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
             nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
             navTitles: {
-                days: 'MM, <i>yyyy</i>',
+                days: 'MM <i>yyyy</i>',
                 months: 'yyyy',
                 years: 'yyyy1 - yyyy2'
             },
@@ -1845,7 +1845,7 @@
             this.d.$nav.on('click', '.datepicker--nav-action', $.proxy(this._onClickNavButton, this));
             this.d.$nav.on('click', '.datepicker--nav-title', $.proxy(this._onClickNavTitle, this));
             this.d.$datepicker.on('click', '.datepicker--button-clear', $.proxy(this._onClickNavButton, this));
-            //this.d.$datepicker.on('click', '.datepicker--button-apply', this._onMouseUpBody.bind(this));
+            //this.d.$datepicker.on('click', '.datepicker--button-apply', $.proxy(this.hide()));
         },
 
         _buildBaseHtml: function () {

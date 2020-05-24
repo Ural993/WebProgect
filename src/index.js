@@ -9,6 +9,8 @@ import './plugins/jquery.maskedinput-master/src/jquery.maskedinput';
 import './plugins/likeButtonPlugin/likeButtonPlugin';
 import './plugins/rateButtonsPlugin/rateButtonsPlugin';
 import './plugins/rangeSliderPlugin/rangeSliderPlugin';
+import './plugins/paginationPlugin/paginationPlugin';
+
 
 // SCSS
 import './assets/scss/main.scss'
@@ -35,6 +37,9 @@ jQuery(function($){
 });
 jQuery(function($){
 	$('.range').rangeSliderPlugin();
+});
+jQuery(function($){
+	$('.paginationBlock').paginationPlugin();
 });
 
 

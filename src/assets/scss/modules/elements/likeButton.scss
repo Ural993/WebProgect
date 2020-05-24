@@ -1,13 +1,8 @@
 
 .likeButton{
-    .likeButton-title{
-        margin: 0px;
-        padding: 0px;
-        @include title1;
-    }
         &__block{
             cursor: pointer;
-            margin-top: 16px;
+            //margin-top: 16px;
             position: relative;
             display: flex;
             width: 40px;

@@ -1,13 +1,4 @@
-.element1Title{
-    &-1{
-        margin: 0px;
-        padding: 0px;
-        margin-bottom: 5px;
-        margin-right: 190.74px;
-        @include title1;
-    }
-}
-.element1{
+.textFieldEmail-input{
     width: 320px;
     height: 44px;
     font-family: 'Montserrat-Regular';
@@ -22,9 +13,9 @@
     border-radius: 4px;
     color: rgba(31, 32, 65, 0.25);
 }
-.element1:focus{
+.textFieldEmail-input:focus{
     outline: none;
 }
-.element1::placeholder{
+.textFieldEmail-input::placeholder{
     color: rgba(31, 32, 65, 0.25) ;
 }

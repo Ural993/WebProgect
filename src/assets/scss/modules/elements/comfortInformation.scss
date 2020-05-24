@@ -1,0 +1,38 @@
+
+.comfortInformation{
+    &__block{
+        &__image{
+            .comfortInformation__img{
+                padding: 4px 4px 4px 3px;
+                margin-right: 10px;
+            }
+        }
+        display: flex;
+        &__text{
+            
+            .comfortInformation__mainText{
+                font-family: "Montserrat-Bold";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+            }
+            .comfortInformation__otherText{
+                font-family: "Montserrat-Regular";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+            }
+        }
+    }
+     &__line{
+        margin-top: 16px;
+        width: 280px;
+        height: 1px;
+        background: rgba(31, 32, 65, 0.1);
+     }
+}
+

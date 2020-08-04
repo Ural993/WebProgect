@@ -2,34 +2,59 @@
 (function ($) {
   
     $.fn.paginationPlugin = function () {
-        let itemCount = 9;
-        const $this = $(this);
-        // const $heart = $('.likeButton-heart');
-        // const countCls = 'likeButton-heart-count';
-        const $border = $('.paginationBlock');
-        // const $counter = $(`<span>${itemCount}</span>`).addClass(countCls);
-        // $('.likeButton__block').append($counter);
         let totalPages = 15;
-        let pages = [];
-        for (let i = 1; i <= totalPages; i++) {
-            pages.push(i);}
         let portionSize = 3;
+        let pages =[];
+        let maxPortionNumber = Math.ceil(totalPages/portionSize);
         let portionNumber = 1;
-        let portionCount = Math.ceil(totalPages / portionSize);
-        let leftPortionPageNumber = (portionNumber-1)* portionSize + 1;
-        let rightPortionPageNumber = portionNumber* portionSize;
-        let paginator = pages
-        .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
-        .map(p => {
-        return $(`<span ${onClick=> onPageChanged(p)}>${p}</span>`)
-    })
-    $border.append(paginator);
-        // <div >
-        //             {portionNumber > 1 && <button onClick={()=> {setPortionNumber(portionNumber-1)}}>PREV</button>}
-                   
-        //             {portionCount>portionNumber && <button onClick={()=> setPortionNumber(portionNumber+1)}>NEXT</button>}
-        //         </div>;
-     
+        for (let i = 1; i <= totalPages; i++) {
+            pages.push(i);};
+        function changePortion (){
+            $('.content').empty();
+            let leftPortionPageNumber = (portionNumber-1)* portionSize + 1;
+            let rightPortionPageNumber = portionNumber* portionSize;
+            $('.content').append(pages
+            .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber )
+            .map(p=>{return `<div  class ='number' id=${p}>${p}</div>`}));
+            $('.number').css('display', 'inline-block');
+            $('#1').css('width', '40px');
+            $('#1').css('height', '40px');
+            $('#1').css('border-radius', '22px');
+            $('#1').css('background', 'linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)');
+
+           
+            if(portionNumber < maxPortionNumber){
+                $('.content').append(`...${totalPages}`)
+            }
+
+            if(portionNumber>1){
+                $('.leftButton').removeClass('hidden');
+            }else{
+                $('.leftButton').addClass('hidden'); 
+            }
+
+
+            if(portionNumber === maxPortionNumber){
+                $('.rightButton').addClass('hidden');
+            }else{
+                $('.rightButton').removeClass('hidden'); 
+            }
+        };
+        
+        $('.rightButton').click(function(){
+            portionNumber = portionNumber+1;
+            changePortion();
+        })
+
+        $('.leftButton').click(function(){
+            portionNumber = portionNumber-1;
+            changePortion();
+        })
+        
+        
+        
+
+        changePortion();
     }
   }(jQuery));
   

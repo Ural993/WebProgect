@@ -1,0 +1,31 @@
+.paginationBlock{
+    display: flex;   
+}
+.leftButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.rightButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.hidden{
+    display: none;
+}
+.number{
+    padding: 5px;
+}
+.number #1{
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 22px;
+}
+
+.content{
+    margin-top: 10px;
+}

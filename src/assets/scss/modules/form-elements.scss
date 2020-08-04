@@ -100,6 +100,7 @@
     &-block3{
       @import "./elements/rangeSlider.scss";
       @import "./elements/bulletList.scss";
+      @import "./elements/paginationBlock.scss";
       .buttonsWrapper{
         margin-top: 118.56px;
         .littleBtnWithBackground{

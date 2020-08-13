@@ -2,30 +2,45 @@
     display: flex;   
 }
 .leftButton{
+    margin-top: 10px;
     width: 40px;
     height: 40px;
     border-radius: 22px;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    position: relative;
+}
+.leftButton img{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    transform: rotate(180deg);
 }
 .rightButton{
+    margin-top: 10px;
     width: 40px;
     height: 40px;
     border-radius: 22px;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    margin-left: 5px;
+    position: relative;
+}
+.rightButton img{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
 }
 .hidden{
-    display: none;
+    visibility: hidden;
 }
 .number{
-    padding: 5px;
-}
-.number #1{
+    padding: 12px 15px 0 15px;
+    display: inline-block;
+    padding-top: 12px;
+    text-align: center;
     width: 40px;
-    height: 40px;
-    background: red;
-    border-radius: 22px;
-}
 
+}
 .content{
     margin-top: 10px;
 }
+

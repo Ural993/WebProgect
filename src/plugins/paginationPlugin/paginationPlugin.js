@@ -16,15 +16,18 @@
             $('.content').append(pages
             .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber )
             .map(p=>{return `<div  class ='number' id=${p}>${p}</div>`}));
-            $('.number').css('display', 'inline-block');
             $('#1').css('width', '40px');
             $('#1').css('height', '40px');
             $('#1').css('border-radius', '22px');
+            $('#1').css('text-align', 'center');
+           
+            // $('#1').css('padding-top', '10px');
             $('#1').css('background', 'linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)');
 
            
             if(portionNumber < maxPortionNumber){
-                $('.content').append(`...${totalPages}`)
+                $('.content').append(`<span class="dot">...</span>`).append(`<span>${totalPages}</span>`)
+                $('.dot').css('margin-right', '10px');
             }
 
             if(portionNumber>1){

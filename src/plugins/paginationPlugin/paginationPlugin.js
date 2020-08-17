@@ -20,14 +20,17 @@
             $('#1').css('height', '40px');
             $('#1').css('border-radius', '22px');
             $('#1').css('text-align', 'center');
+            $('#1').css('color', '#fff');
            
             // $('#1').css('padding-top', '10px');
             $('#1').css('background', 'linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)');
 
            
             if(portionNumber < maxPortionNumber){
-                $('.content').append(`<span class="dot">...</span>`).append(`<span>${totalPages}</span>`)
+                $('.content').append(`<span class="dot">...</span>`).append(`<span class="15">${totalPages}</span>`)
                 $('.dot').css('margin-right', '10px');
+                $('.15').css('font-family', 'Montserrat');
+                $('.15').css('font-size', '12px');
             }
 
             if(portionNumber>1){

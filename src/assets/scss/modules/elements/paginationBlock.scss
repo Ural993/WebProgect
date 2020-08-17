@@ -1,5 +1,7 @@
 .paginationBlock{
-    display: flex;   
+    display: flex;
+    position: absolute;  
+    right: 120px; 
 }
 .leftButton{
     margin-top: 10px;
@@ -38,6 +40,10 @@
     padding-top: 12px;
     text-align: center;
     width: 40px;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
 
 }
 .content{

@@ -11,13 +11,14 @@
 
 .range__button_1, .range__button_2 {
     position: absolute;
-    top: 50%;
+   // top: 50%;
+   top: -7px;
 
     width: 20px;
     height: 20px;
 
-    cursor: move;
-    transform: translateY(-50%);
+    // cursor: move;
+    // transform: translateY(-50%);
 
     border: none;
     border-radius: 50%;
@@ -27,8 +28,9 @@
 {
   position: absolute;
     height: 5px;
-    width:0px;
-    margin-top:3px;
+    //width:0px;
+    //top:5px;
+    //margin-left: 50px;;
     border: none;
     background-color: #559933;
 }

@@ -149,15 +149,15 @@
             
               $(document).mousemove(function(evt) {
                   var left2 = evt.pageX - shiftX2 - sliderCoords.left;
-                  var right2 = slider.offsetWidth - button2.offsetWidth;
+                  var right2 = slider.outerWidth() - button2.outerWidth();
                   if (left2 < 0) left2 = 0;
                   if (left2 > right2) left2 = right2;
-                  button2.css('marginLeft', `${left2}px`);                      
+                  button2.css('left', `${left2}px`);                      
                 
                 
                   shiftX1 = evt.pageX - buttonCoords1.left; 
                   var left1 = evt.pageX - shiftX1 - sliderCoords.left;
-                  var right1 = slider.offsetWidth - button1.offsetWidth;  
+                  var right1 = slider.outerWidth() - button1.outerWidth();  
                   if (left1 < 0) left1 = 0;
                   if (left1 > right1) left1 = right1;                      
                    
@@ -166,17 +166,17 @@
                       
                   if (left1 > left2)
                     {
-                      between.css('width', `${left1-left2} px`);
+                      between.css('width', `${left1-left2}px`);
                       between.css('marginLeft', `${left2}px`);
-                      per_min = left2*100/(slider.offsetWidth-button1.offsetWidth);
-                      per_max = left1*100/(slider.offsetWidth-button1.offsetWidth);
+                      per_min = left2*100/(slider.outerWidth()-button1.outerWidth());
+                      per_max = left1*100/(slider.outerWidth()-button1.outerWidth());
                     }
                   else
                     {
                       between.css('width', `${left2-left1}px`);
                       between.css('marginLeft', `${left1}px`);
-                      per_min = left1*100/(slider.offsetWidth-button1.offsetWidth);
-                      per_max = left2*100/(slider.offsetWidth-button1.offsetWidth);
+                      per_min = left1*100/(slider.outerWidth()-button1.outerWidth());
+                      per_max = left2*100/(slider.outerWidth()-button1.outerWidth());
                     }
                       inpt1.val(parseInt(min)+Math.round((max-min)*per_min/100));
                       inpt2.val(parseInt(min)+Math.round((max-min)*per_max/100)); 

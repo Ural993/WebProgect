@@ -1,18 +1,21 @@
-.textField-input{
+.email-input{
     width: 320px;
     height: 44px;
     font-family: 'Montserrat-Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 18px;
     padding-left: 15px;
     background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 0.25);
 }
-.textField-input::placeholder{
-    color: rgba(47, 51, 155, 0.75) ;
+.email-input:focus{
+    outline: none;
+}
+.email-input::placeholder{
+    color: rgba(31, 32, 65, 0.25) ;
 }

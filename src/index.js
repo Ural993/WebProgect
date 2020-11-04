@@ -1,7 +1,9 @@
+
+
 // JS
 import './js/'
 import 'jquery';
-import 'popper.js'
+//import 'popper.js'
 import './plugins/air-datepiker/js/datepicker';
 import './plugins/guestsDropdownPlugin/index';
 import './plugins/comfortDropdownPlugin/index';
@@ -13,7 +15,7 @@ import './plugins/paginationPlugin/paginationPlugin';
 
 
 // SCSS
-import './assets/scss/main.scss'
+import './main.scss'
 
 // CSS (example)
 // import './assets/css/main.css'

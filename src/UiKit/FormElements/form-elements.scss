@@ -1,4 +1,4 @@
-@import "./mixins.scss";
+@import "../../utils/mixins.scss";
 @include bigBtn;
 @include littleBtnActiveWithBackground;
 @include littleBtnNotActiveWithBackground;
@@ -24,14 +24,14 @@
         margin-left: 141px;
         margin-right: 126px;
         
-        @import "./elements/textFieldEmail.scss";
-        @import "./elements/textField.scss";
-        @import "./elements/maskedTextField.scss";
-        @import "./elements/dateDropdown.scss";
-        @import "./elements/comfortDropdown.scss";
-        @import "./elements/checkboxList.scss";
-        @import "./elements/comfortInformation.scss";
-        @import "./elements/convenienceInformation.scss";
+        @import "./email-input/email-input.scss";
+        @import "./text-input/text-input.scss";
+        // @import "./elements/maskedTextField.scss";
+        // @import "./elements/dateDropdown.scss";
+        // @import "./elements/comfortDropdown.scss";
+        // @import "./elements/checkboxList.scss";
+        // @import "./elements/comfortInformation.scss";
+        // @import "./elements/convenienceInformation.scss";
       .textFieldEmailTitleWrapper {
           margin-bottom: 5px;
         }
@@ -67,13 +67,13 @@
     }
     &-block2{
       margin-right: 92px;
-        @import "./elements/checkboxButtons.scss";
-        @import "./elements/radioButtons.scss";
-        @import "./elements/toggleButton.scss";
-        @import "./elements/likeButton.scss";
-        @import "./elements/rateButton.scss";
-        @import "./elements/richCheckboxButtons.scss";
-        @import "./elements/commentBlock.scss";
+        // @import "./elements/checkboxButtons.scss";
+        // @import "./elements/radioButtons.scss";
+        // @import "./elements/toggleButton.scss";
+        // @import "./elements/likeButton.scss";
+        // @import "./elements/rateButton.scss";
+        // @import "./elements/richCheckboxButtons.scss";
+        // @import "./elements/commentBlock.scss";
         .checkboxButtonsWrapper{}
         .radioButtonsWrapper{
           margin-top: 40.88px;
@@ -98,9 +98,9 @@
         }
     }
     &-block3{
-      @import "./elements/rangeSlider.scss";
-      @import "./elements/bulletList.scss";
-      @import "./elements/paginationBlock.scss";
+      // @import "./elements/rangeSlider.scss";
+      // @import "./elements/bulletList.scss";
+      // @import "./elements/paginationBlock.scss";
       .buttonsWrapper{
         margin-top: 118.56px;
         .littleBtnWithBackground{

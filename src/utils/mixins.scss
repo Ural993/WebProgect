@@ -10,7 +10,7 @@
         border: none;
         .bigBtn-text{
             margin-left: 80px;
-            font-family: $Montserrat-Regular;
+            font-family: 'Montserrat-Regular';
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
@@ -55,7 +55,7 @@
         cursor: pointer;
         .littleBtnNotActiveWithBackground-text{
             margin-left: 15px;
-            font-family: $Montserrat-Regular;
+            font-family: 'Montserrat-Regular';
             font-style: normal;
             font-weight: bold;
             font-size: 12px;
@@ -84,7 +84,7 @@
             background: white;
             border-radius: 22px;
             .littleBtnActiveWithoutBackground-text{
-                font-family: $Montserrat-Regular;
+                font-family: 'Montserrat-Regular';
                 font-style: normal;
                 font-weight: bold;
                 font-size: 12px;
@@ -115,7 +115,7 @@
             background: white;
             border-radius: 22px;
             .littleBtnNotActiveWithoutBackground-text{
-                font-family: $Montserrat-Regular;
+                font-family: 'Montserrat-Regular';
                 font-style: normal;
                 font-weight: bold;
                 font-size: 12px;
@@ -129,7 +129,7 @@
     p.btnTextWithLightColor{
         margin: 0;
         padding: 0;
-        font-family: $Montserrat-Regular;
+        font-family: 'Montserrat-Regular';
         font-style: normal;
         font-weight: bold;
         font-size: 12px;

@@ -9,8 +9,8 @@
           var button2 = $('.range__button_2');   
           var inpt1 = $('.range_inpt1');
           var inpt2 = $('.range_inpt2');
-                  var min=inpt1.attr('min');
-                  var max=inpt1.attr('max');
+          var min=inpt1.attr('min');
+          var max=inpt1.attr('max');
           
           /*init*/
           var sliderCoords = getCoords(slider);
@@ -24,6 +24,7 @@
           {
             if (parseInt(inpt1.val()) < min)
               inpt1.val(min);
+              
             if (parseInt(inpt1.val()) > max)
               inpt1.val(max);
             if (parseInt(inpt1.val()) > parseInt(inpt2.val()))

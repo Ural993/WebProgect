@@ -2,11 +2,12 @@
 (function ($) {
   
     $.fn.rateButtonsPlugin = function () {
+      debugger
      this.each(function(){
        const $this = $(this);
        const $items = $this.find('img.star_border');
       
-        $this.click(function(event){
+        $this.on('click', function(event){
           let attr = event.target.getAttribute('data-id');
           $items.each(function () {
             const $item = $(this);

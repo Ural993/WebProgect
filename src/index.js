@@ -1,24 +1,19 @@
-
-
 // JS
-import './js/'
-import 'jquery';
-//import 'popper.js'
-import './plugins/air-datepiker/js/datepicker';
-import './plugins/guestsDropdownPlugin/index';
+import './UiKit/FormElements/guestsdropdown/guestsdropdownPlugin/index';
 import './plugins/comfortDropdownPlugin/index';
 import './plugins/jquery.maskedinput-master/src/jquery.maskedinput';
 import './plugins/likeButtonPlugin/likeButtonPlugin';
 import './plugins/rateButtonsPlugin/rateButtonsPlugin';
 import './plugins/rangeSliderPlugin/rangeSliderPlugin';
 import './plugins/paginationPlugin/paginationPlugin';
-
+import './plugins/air-datepiker/js/datepicker';
 
 // SCSS
-import './main.scss'
+import './assets/scss/main.scss'
 
 // CSS (example)
 // import './assets/css/main.css'
+
 jQuery(function($){
 	$('.date').mask('99.99.9999');
 });
@@ -28,7 +23,7 @@ jQuery(function($){
 jQuery(function($){
 	$('.iqdropdown').comfortDropdownPlugin();
 });
-jQuery(function($){
+window.jQuery(function($){
 	$('.guestsdropdown').guestsDropdownPlugin();
 });
 jQuery(function($){
@@ -43,5 +38,4 @@ jQuery(function($){
 jQuery(function($){
 	$('.paginationBlock').paginationPlugin();
 });
-
 

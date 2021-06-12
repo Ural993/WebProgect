@@ -2,9 +2,9 @@ mixin bigBtn(text)
  button.bigBtn-button
   .bigBtn-text= text
     img(src="assets/img/arrow_forward.svg") 
-mixin littleBtnActiveWithBackground(text)
- button.littleBtnActiveWithBackground-button
-  .littleBtnActiveWithBackground-text= text 
+mixin littleBtnActiveWithBackground(options)
+ button.littleBtnActiveWithBackground-button(class= options.class)
+  .littleBtnActiveWithBackground-text= options.text 
 mixin littleBtnNotActiveWithBackground(text)
  button.littleBtnNotActiveWithBackground-button
   .littleBtnNotActiveWithBackground-text= text

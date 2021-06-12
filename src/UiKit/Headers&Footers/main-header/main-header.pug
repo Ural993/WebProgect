@@ -1,0 +1,30 @@
+header.main-header
+ .container
+  .main-header__inner
+   .logo 
+    img(class="logo__main" src="assets/img/main-logo.svg")
+    img(class="logo__text" src="assets/img/TOXIN.svg")
+   nav.menu
+    ul.menu__list
+     li.menu__list-item
+      a(class="menu__link menu__link--active" href="#") О нас
+     li.menu__list-item 
+      a(class="menu__link" href="#") Услуги
+      img(class="list-item__img" src="assets/img/expand_more.svg")
+     li.menu__list-item 
+      a(class="menu__link" href="#") Вакансии
+     li.menu__list-item 
+      a(class="menu__link" href="#") Новости
+     li.menu__list-item 
+      a(class="menu__link" href="#") Солашения
+      img(class="list-item__img" src="assets/img/expand_more.svg")
+   .enter-button
+     +littleBtnActiveWithoutBackground("ВОЙТИ")
+   .reg-button
+     +littleBtnActiveWithBackground({text:"ЗАРЕГЕСТРИРОВАТЬСЯ", class:'reg-button__mixin'})
+   
+
+
+
+
+

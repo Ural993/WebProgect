@@ -2,7 +2,6 @@
 (function ($) {
   
     $.fn.rateButtonsPlugin = function () {
-      debugger
      this.each(function(){
        const $this = $(this);
        const $items = $this.find('img.star_border');

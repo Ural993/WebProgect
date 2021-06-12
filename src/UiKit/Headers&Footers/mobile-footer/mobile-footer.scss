@@ -1,0 +1,56 @@
+.mobile-footer {
+    padding-top: 804px;
+    padding-bottom: 140px;
+
+    background-color: #E5E5E5;
+
+    .container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        width: 768px;
+        margin: 40px auto 140px;
+        background-color: #FFFFFF;
+
+
+        .main-footer__inner {
+
+            .logo {
+                width: 108px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+
+                .logo__main {
+                    padding-right: 12.5px;
+                }
+            }
+
+            .block {
+                p {
+                    text-align: center;
+                    font-family: 'Montserrat-Regular';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+                .networks {
+
+                    width: 158px;
+                    margin: 0 auto;
+                    margin-top: 25px;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            padding-left: 22px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

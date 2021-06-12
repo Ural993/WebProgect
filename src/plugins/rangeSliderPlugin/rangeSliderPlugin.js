@@ -9,16 +9,24 @@
           var button2 = $('.range__button_2');   
           var inpt1 = $('.range_inpt1');
           var inpt2 = $('.range_inpt2');
-          var min=inpt1.attr('min');
-          var max=inpt1.attr('max');
+          var min = 0;
+          var max = 15000;
           
           /*init*/
           var sliderCoords = getCoords(slider);
-          button1.css('left', '0px');
-          button2.css('left', `${slider.outerWidth()-button1.outerWidth()}px` );
-          between.css('width', `${slider.outerWidth()-button1.outerWidth()}px` );
-          inpt1.val(min);
-          inpt2.val(max);
+          var per1 = parseInt(5000-min)*100/(max-min);
+          var per2 = parseInt(10000-min)*100/(max-min);
+          var left1 = per1*(slider.outerWidth()-button1.outerWidth())/100;
+          var left2 = per2*(slider.outerWidth()-button1.outerWidth())/100;
+              button1.css('marginLeft', `${left1}px`); 
+              button2.css('marginLeft', `${left2}px`);
+              between.css('width', `${left2-left1}px`);
+              between.css('marginLeft', `${left1}px`);
+          //button1.css('left', '0px');
+          //button2.css('left', `${slider.outerWidth()-button1.outerWidth()}px` );
+          //between.css('width', `${slider.outerWidth()-button2.outerWidth()}px`);
+          inpt1.text(5000+' ₽ -');
+          inpt2.text(10000+' ₽');
           
           inpt1.onchange= function(evt)
           {
@@ -38,21 +46,21 @@
               var sliderCoords = getCoords(slider);
               var per1 = parseInt(inpt1.val()-min)*100/(max-min);
               var per2 = parseInt(inpt2.val()-min)*100/(max-min);
-              var left1 = per1*(slider.offsetWidth-button1.offsetWidth)/100;
-              var left2 = per2*(slider.offsetWidth-button1.offsetWidth)/100;
+              var left1 = per1*(slider.outerWidth()-button1.outerWidth())/100;
+              var left2 = per2*(slider.outerWidth()-button1.outerWidth())/100;
               
               button1.css('marginLeft', `${left1}px`); 
               button2.css('marginLeft', `${left2}px`);
                   
                   if (left1 > left2)
                     {
-                      between.style.width = (left1-left2) + 'px';
-                      between.style.marginLeft = left2 + 'px';
+                      between.css('width', `${left1-left2}px`);
+                      between.css('marginLeft', `${left2}px`);
                     }
                   else
                     {
-                      between.style.width = (left2-left1) + 'px';
-                      between.style.marginLeft = left1 + 'px';  
+                      between.css('width', `${left2-left1}px`);
+                      between.css('marginLeft', `${left1}px`);  
                     }
           }
           inpt2.onchange= function(evt)
@@ -71,11 +79,11 @@
               var sliderCoords = getCoords(slider);
               var per1 = parseInt(inpt1.val()-min)*100/(max-min);
               var per2 = parseInt(inpt2.val()-min)*100/(max-min);
-              var left1 = per1*(slider.offsetWidth-button1.offsetWidth)/100;
-              var left2 = per2*(slider.offsetWidth-button1.offsetWidth)/100;
+              var left1 = per1*(slider.outerWidth()-button1.outerWidth())/100;
+              var left2 = per2*(slider.outerWidth()-button1.outerWidth())/100;
               
                   button1.css('marginLeft', `${left1}px`); 
-                  button2.css('marginLeft', `${left}px`);
+                  button2.css('marginLeft', `${left2}px`);
                   
                   if (left1 > left2)
                     {
@@ -129,8 +137,8 @@
                       per_min = left1*100/(slider.outerWidth()-button1.outerWidth());
                       per_max = left2*100/(slider.outerWidth()-button1.outerWidth());
                     }
-                      inpt1.val(parseInt(min)+Math.round((max-min)*per_min/100));
-                      inpt2.val(parseInt(min)+Math.round((max-min)*per_max/100)); 
+                      inpt1.text(parseInt(min)+Math.round((max-min)*per_min/100)+' ₽-');
+                      inpt2.text(parseInt(min)+Math.round((max-min)*per_max/100)+' ₽'); 
               
               });
               $(document).mouseup(function() {
@@ -153,7 +161,7 @@
                   var right2 = slider.outerWidth() - button2.outerWidth();
                   if (left2 < 0) left2 = 0;
                   if (left2 > right2) left2 = right2;
-                  button2.css('left', `${left2}px`);                      
+                  button2.css('marginLeft', `${left2}px`);                      
                 
                 
                   shiftX1 = evt.pageX - buttonCoords1.left; 
@@ -179,8 +187,8 @@
                       per_min = left1*100/(slider.outerWidth()-button1.outerWidth());
                       per_max = left2*100/(slider.outerWidth()-button1.outerWidth());
                     }
-                      inpt1.val(parseInt(min)+Math.round((max-min)*per_min/100));
-                      inpt2.val(parseInt(min)+Math.round((max-min)*per_max/100)); 
+                      inpt1.text(parseInt(min)+Math.round((max-min)*per_min/100) + ' ₽-');
+                      inpt2.text(parseInt(min)+Math.round((max-min)*per_max/100)+ ' ₽'); 
                   
               });
               $(document).mouseup(function() {

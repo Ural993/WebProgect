@@ -4,11 +4,14 @@
 @import "utils/fonts";
 @import "utils/reset";
 @import "./utils/fonts.scss";
-@import "../../UiKit/FormElements/form-elements.scss";
 @import "../../plugins/air-datepiker/css/datepicker.css";
 @import "../../UiKit/FormElements/guestsdropdown/guestsdropdownPlugin/styles/item-quantity-dropdown.min.css";
 @import "../../plugins/comfortDropdownPlugin/styles/item-quantity-dropdown.min.css";
-
+@import "../../UiKit/FormElements/form-elements.scss";
+@import "../../UiKit/Headers&Footers/main-header/main-header.scss";
+@import "../../UiKit/Headers&Footers/user-header/user-header.scss";
+@import "../../UiKit/Headers&Footers/main-footer/main-footer.scss";
+@import "../../UiKit/Headers&Footers/mobile-footer/mobile-footer.scss";
 // html {
 //   line-height: $mainLineHeight;
 // 	font-size: $mainFontSize;

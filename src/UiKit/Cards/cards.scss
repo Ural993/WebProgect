@@ -1,0 +1,30 @@
+@import "./found-numbers/found-numbers.scss";
+@import "./registration/registration.scss";
+@import "./booking/booking.scss";
+@import "./calendar/calendar.scss";
+@import "./signin/signin.scss";
+@import "./room1/room1.scss";
+
+.section-cards,
+.section-logo {
+    background-color: #E5E5E5;
+}
+
+.section-logo {
+    padding: 30px 30px;
+}
+
+.container {
+    padding: 0 140px;
+    background-color: #E5E5E5;
+}
+
+.section-cards {
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+}

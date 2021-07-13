@@ -1,0 +1,27 @@
+.found-numbers
+ .title Найдём номера под ваши пожелания
+ .dateDropdown
+    .dateDropdown__input1
+     p.dateDropdown__input1Title ПРИБЫТИЕ
+     <input type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="input1" placeholder="ДД.ММ.ГГГГ"/>
+    .dateDropdown__input2 
+     p.dateDropdown__input2Title ВЫЕЗД
+     <input type="text"  id="input2" placeholder="ДД.ММ.ГГГГ"/>
+ .guestsdropdown-wrapper
+  p.guesttitle Гости
+  .guestsdropdown
+      p.guestsdropdown-selection
+      .guestsdropdown-menu
+        .guestsdropdown-menu-option(data-id="item1")
+        div
+          p.guestsdropdown-item ВЗРОСЛЫЕ
+        .guestsdropdown-menu-option(data-id="item2")
+        div
+          p.guestsdropdown-item ДЕТИ
+        .guestsdropdown-menu-option(data-id="item3")
+        div
+          p.guestsdropdown-item МЛАДЕНЦЫ
+        .guestsdropdown-buttons
+        .guestsdropdown-button-clear Очистить 
+        .guestsdropdown-button-apply Применить      
+ +bigBtn("ПОДОБРАТЬ НОМЕР")    

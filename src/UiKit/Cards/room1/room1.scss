@@ -1,0 +1,169 @@
+@import "../../FormElements/email-input/email-input.scss";
+@import "../../FormElements/radioButtons/radioButtons.scss";
+@import "../../FormElements/masked-text-input/masked-text-input.scss";
+@import "../../FormElements/toggleButton/toggleButton.scss";
+@import "../../FormElements/rateButton/rateButton.scss";
+
+.room1 {
+    width: 270px;
+    height: 257px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 40.5px;
+    position: relative;
+
+    .img {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .gradientLeft,
+        .gradientRight {
+            position: absolute;
+            top: 0;
+            width: 42px;
+            height: 151px;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .gradientRight {
+            right: 0;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    .leftArrow,
+    .rightArrow {
+        position: absolute;
+    }
+
+    .rightArrow {
+        left: 244px;
+        top: 68px;
+    }
+
+    .leftArrow {
+        left: 18px;
+        top: 68px;
+    }
+
+    .circleBlock {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 213px;
+        top: 127px;
+        width: 41.25px;
+
+        li {
+            width: 7.5px;
+            height: 7.49px;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+            border-radius: 50%;
+        }
+
+        li:nth-child(1) {
+            background-color: #FFFFFF;
+            box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+        }
+
+    }
+
+    .wrapper {
+        padding-right: 17px;
+        padding-left: 20px;
+
+        .about {
+            margin-top: 14px;
+            border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+            padding-bottom: 7px;
+            ;
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+
+
+
+                .left {
+                    font-family: 'Montserrat-Bold';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 15px;
+                    display: block;
+                    padding-top: 3px;
+
+                    span {
+                        font-family: 'Montserrat-Bold';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 19px;
+                        line-height: 29px;
+
+
+
+                        strong {
+                            font-family: 'Montserrat-Bold';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 15px;
+                            text-transform: uppercase;
+                            color: #BC9CFF;
+                            padding-left: 5px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+
+                .right {
+                    font-family: 'Montserrat-Bold';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: rgba(31, 32, 65, 0.5);
+                    display: block;
+                    padding-top: 10px;
+
+                    span {
+                        font-family: 'Montserrat-Regular';
+                        font-style: normal;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: rgba(31, 32, 65, 0.5);
+                        padding-left: 3px;
+                    }
+                }
+            }
+        }
+
+        .rateButton {
+            margin-top: 8px;
+            display: flex;
+
+            p {
+                font-family: 'Montserrat-Regular';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                padding-left: 25px;
+                padding-top: 4px;
+                color: rgba(31, 32, 65, 0.5);
+                ;
+
+                span {
+                    font-family: 'Montserrat-Bold';
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+}

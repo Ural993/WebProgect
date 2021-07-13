@@ -1,0 +1,26 @@
+.calendar {
+    width: 320px;
+    height: 369px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    .title {
+        font-family: 'Montserrat-Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1F2041;
+        padding-bottom: 21px;
+    }
+
+    @import "../../FormElements/dateDropdown/dateDropdown.scss";
+}
+
+.guestsdropdown-wrapper {
+    padding-top: 20.56px;
+    margin-bottom: 31px;
+}

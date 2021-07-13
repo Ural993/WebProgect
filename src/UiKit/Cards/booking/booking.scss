@@ -1,0 +1,138 @@
+.booking {
+    width: 380px;
+    height: 512px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+
+
+        .left {
+            font-family: 'Montserrat-Bold';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 15px;
+            display: block;
+
+            span {
+                font-family: 'Montserrat-Bold';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+
+
+
+                strong {
+                    font-family: 'Montserrat-Bold';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    color: #BC9CFF;
+                    padding-left: 9px;
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .right {
+            font-family: 'Montserrat-Bold';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+            display: block;
+            padding-top: 10px;
+
+            span {
+                font-family: 'Montserrat-Regular';
+                font-style: normal;
+                font-size: 12px;
+                line-height: 15px;
+                color: rgba(31, 32, 65, 0.5);
+                padding-left: 3px;
+            }
+        }
+    }
+
+    .cost1,
+    .cost2,
+    .cost3 {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Montserrat-Regular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cost1 {
+        margin-bottom: 17px;
+    }
+
+    .cost2 {
+        margin-bottom: 12px;
+
+        p {
+            text-align: center;
+
+            .first {
+                padding-left: 5px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+
+    .cost3 {
+        p {
+            span {
+                line-height: 0px;
+            }
+
+            .second {
+                padding-left: 30px;
+            }
+        }
+    }
+
+
+    .guestsdropdown-wrapper {
+        padding-top: 20.56px;
+        margin-bottom: 20.56px;
+    }
+
+    .total {
+        font-family: 'Montserrat-Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 23px;
+        display: flex;
+        margin-top: 29px;
+        margin-bottom: 22px;
+
+        p {
+            span {
+                width: 176px;
+                display: inline-block;
+                border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+                font-family: 'Montserrat-Reglar';
+            }
+
+            display: inline-block;
+        }
+    }
+
+    @import "../../FormElements/dateDropdown/dateDropdown.scss";
+}

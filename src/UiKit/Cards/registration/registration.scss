@@ -1,0 +1,84 @@
+@import "../../FormElements/email-input/email-input.scss";
+@import "../../FormElements/radioButtons/radioButtons.scss";
+@import "../../FormElements/masked-text-input/masked-text-input.scss";
+@import "../../FormElements/toggleButton/toggleButton.scss";
+
+.registration {
+    width: 380px;
+    height: 646px;
+    background-color: #fff;
+    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 40px;
+
+    .title {
+        font-family: 'Montserrat-Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1F2041;
+    }
+
+    #name {
+        margin-top: 20px;
+    }
+
+    #sername {
+        margin-top: 10px;
+    }
+
+    .radioButtons__wrapper {
+        padding-left: 6px;
+        margin-top: 10px;
+
+    }
+
+
+    .masked-wrapper .posttitle {
+        font-family: 'Montserrat-Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-top: 23.56px;
+        margin-bottom: 5px;
+    }
+
+    .posttitle {
+        font-family: 'Montserrat-Bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        margin-top: 23.56px;
+        margin-bottom: 5px;
+    }
+
+    #email {
+        margin-bottom: 10px;
+    }
+
+    .bigBtn-button {
+        margin-top: 20px;
+    }
+
+    .registration__footer {
+        .text {
+            padding-right: 34px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+}

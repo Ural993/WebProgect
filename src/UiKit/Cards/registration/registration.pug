@@ -1,0 +1,28 @@
+.registration
+ .title Регистрация аккаунта
+  input(type=" text" class="email-input" placeholder="Имя" id="name")
+  input(type=" text" class="email-input" placeholder="Фамилия" id="sername")
+ .radioButtons__wrapper
+  .radioButton__block1
+    input(type="radio" class="radioButton" id="rb1" name="radio")
+    label(for="rb1" class="radioButton-text").radioButton__block1__text Мужчина
+  .radioButton__block2
+    input(type="radio" class="radioButton" id="rb2" name="radio")
+    label(for="rb2"  class="radioButton-text").radioButton__block2__text Женщина
+ .masked-wrapper
+   .posttitle Дата рождения
+   input(type=" text" class="masked-text-input date" placeholder="ДД.ММ.ГГГГ" )
+ .posttitle данные для входа в сервис
+ input(type=" text" class="email-input" placeholder="Email" id="email")
+ input(type="password" class="email-input" placeholder="Пароль" id="password")
+ .toggleButton
+  .toggleButton__title-wrapper
+  .toggleButton__block
+    input(type="checkbox" class="toggleButton-input" id="tg" )
+    label(for="tg" class="toggleButton-label")
+     span.toggleButton-text  Получать спецпредложения 
+ +bigBtn("ПЕРЕЙТИ К ОПЛАТЕ")    
+ .registration__footer 
+  .text Уже есть аккаунт на Toxin
+  +littleBtnActiveWithoutBackground2("ВОЙТИ")
+  

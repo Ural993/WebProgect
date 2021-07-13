@@ -1,13 +1,13 @@
-
-.radioButton{
+.radioButton {
     opacity: 0;
 }
-.radioButton-text{
+
+.radioButton-text {
     position: relative;
     cursor: pointer;
 }
 
-.radioButton-text::before{
+.radioButton-text::before {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -16,12 +16,12 @@
     display: inline-block;
     content: '';
     left: -20px;
-    
+
 
 }
 
 .radioButton-text::after {
-    top:4px;
+    top: 4px;
     left: -16px;
     position: absolute;
     display: inline-block;
@@ -29,59 +29,63 @@
     height: 12px;
     border-radius: 10px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      
+
     content: none;
 }
 
-.radioButton:checked + .radioButton-text::after{
+.radioButton:checked+.radioButton-text::after {
     content: '';
 }
-.radioButton:checked + .radioButton-text::before{
+
+.radioButton:checked+.radioButton-text::before {
     border: 1px solid #BC9CFF;
 }
 
-.radioButtons{
-    &__title-wrapper{
-        .radioButtons-title{
+.radioButtons {
+    &__title-wrapper {
+        .radioButtons-title {
             margin: 0px;
             padding: 0px;
             @include title1;
         }
     }
-    &__wrapper{
+
+    &__wrapper {
         margin-top: 16px;
         display: flex;
-    .radioButton__block1{
-        display: flex;
-     
-        &__text{
-            margin: 0px;
-            padding: 0px;
-            padding-left: 10px;
-            font-family: 'Montserrat-Regular';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 18px;
-            color: rgba(31, 32, 65, 0.5);
+
+        .radioButton__block1 {
+            display: flex;
+
+            &__text {
+                margin: 0px;
+                padding: 0px;
+                padding-left: 10px;
+                font-family: 'Montserrat-Regular';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.5);
+            }
+        }
+
+        .radioButton__block2 {
+            display: flex;
+            margin-left: 26px;
+
+            &__text {
+                margin: 0px;
+                padding: 0px;
+                padding-left: 9.74px;
+                font-family: 'Montserrat-Regular';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.5);
+
+            }
         }
     }
-    .radioButton__block2{
-        display: flex;
-        margin-left: 20px;
-
-        &__text{
-            margin: 0px;
-            padding: 0px;
-            padding-left: 9.74px;
-            font-family: 'Montserrat-Regular';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 18px;
-            color: rgba(31, 32, 65, 0.5);
-
-        }
-    }
-}
 }

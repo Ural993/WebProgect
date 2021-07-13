@@ -47,7 +47,6 @@
         cases[(totalItems%10<5)?totalItems%10:5] ]}`; },
   
     }
-   
   ;
 
   $.fn.guestsDropdownPlugin = function (options) {

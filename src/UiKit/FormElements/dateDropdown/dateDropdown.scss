@@ -1,8 +1,8 @@
-.dateDropdown{
+.dateDropdown {
     display: flex;
-    &__input1{
-        
-        #input1{
+
+    &__input1 {
+        #input1 {
             width: 150px;
             height: 44px;
             margin-right: 20px;
@@ -19,9 +19,9 @@
             color: rgba(31, 32, 65, 0.75);
         }
     }
-    &__input2{
-       
-        #input2{
+
+    &__input2 {
+        #input2 {
             width: 150px;
             height: 44px;
             font-style: normal;
@@ -36,16 +36,18 @@
             color: rgba(31, 32, 65, 0.75);
         }
     }
-    &__input1Title{
-            margin: 0px;
-            padding: 0px;
-            margin-bottom: 5.44px;
-            @include title1;
-        }
-        &__input2Title{
-            margin: 0px;
-            padding: 0px;
-            margin-bottom: 5.44px;
-            @include title1;
-        }
+
+    &__input1Title {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 5.44px;
+        @include title1;
+    }
+
+    &__input2Title {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 5.44px;
+        @include title1;
+    }
 }

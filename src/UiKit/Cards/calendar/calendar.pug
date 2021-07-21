@@ -1,27 +1,63 @@
 .calendar
- .title Найдём номера под ваши пожелания
- .dateDropdown
-    .dateDropdown__input1
-     p.dateDropdown__input1Title ПРИБЫТИЕ
-     <input type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here" id="input1" placeholder="ДД.ММ.ГГГГ"/>
-    .dateDropdown__input2 
-     p.dateDropdown__input2Title ВЫЕЗД
-     <input type="text"  id="input2" placeholder="ДД.ММ.ГГГГ"/>
- .guestsdropdown-wrapper
-  p.guesttitle Гости
-  .guestsdropdown
-      p.guestsdropdown-selection
-      .guestsdropdown-menu
-        .guestsdropdown-menu-option(data-id="item1")
-        div
-          p.guestsdropdown-item ВЗРОСЛЫЕ
-        .guestsdropdown-menu-option(data-id="item2")
-        div
-          p.guestsdropdown-item ДЕТИ
-        .guestsdropdown-menu-option(data-id="item3")
-        div
-          p.guestsdropdown-item МЛАДЕНЦЫ
-        .guestsdropdown-buttons
-        .guestsdropdown-button-clear Очистить 
-        .guestsdropdown-button-apply Применить      
- +bigBtn("ПОДОБРАТЬ НОМЕР")    
+ #calendars1-container.calendars1-container
+  .calendar.-bottom-left-.-from-bottom-.active(style='left: 171px; top: 346.438px;')
+    nav.calendar--nav
+      .calendar--nav-action(data-action='prev')
+        svg
+          path(d='M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z')
+      .calendar--nav-title
+        | Август 
+        i 2019
+      .calendar--nav-action(data-action='next')
+        svg
+          path(d='M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z')
+    .calendar--content
+      .calendar--days.calendar--body.active
+        .calendar--days-names
+          .calendar--day-name Пн
+          .calendar--day-name Вт
+          .calendar--day-name Ср
+          .calendar--day-name Чт
+          .calendar--day-name Пт
+          .calendar--day-name.-weekend- Сб
+          .calendar--day-name.-weekend- Вс
+        .calendar--cells.calendar--cells-days
+          .calendar--cell.calendar--cell-day.-other-month-(data-date='28' data-month='5' data-year='2021') 29
+          .calendar--cell.calendar--cell-day.-other-month-(data-date='29' data-month='5' data-year='2021') 30
+          .calendar--cell.calendar--cell-day.-other-month-(data-date='30' data-month='5' data-year='2021') 31
+          .calendar--cell.calendar--cell-day(data-date='1' data-month='6' data-year='2021') 1
+          .calendar--cell.calendar--cell-day(data-date='2' data-month='6' data-year='2021') 2
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='3' data-month='6' data-year='2021') 3
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='4' data-month='6' data-year='2021') 4
+          .calendar--cell.calendar--cell-day(data-date='5' data-month='6' data-year='2021') 5
+          .calendar--cell.calendar--cell-day(data-date='6' data-month='6' data-year='2021') 6
+          .calendar--cell.calendar--cell-day(data-date='7' data-month='6' data-year='2021') 7
+          .calendar--cell.calendar--cell-day(data-date='8' data-month='6' data-year='2021') 8
+          .calendar--cell.calendar--cell-day(data-date='9' data-month='6' data-year='2021') 9
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='10' data-month='6' data-year='2021') 10
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='11' data-month='6' data-year='2021') 11
+          .calendar--cell.calendar--cell-day(data-date='12' data-month='6' data-year='2021') 12
+          .calendar--cell.calendar--cell-day.-current-(data-date='13' data-month='6' data-year='2021') 13
+          .calendar--cell.calendar--cell-day(data-date='14' data-month='6' data-year='2021') 14
+          .calendar--cell.calendar--cell-day(data-date='15' data-month='6' data-year='2021') 15
+          .calendar--cell.calendar--cell-day(data-date='16' data-month='6' data-year='2021') 16
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='17' data-month='6' data-year='2021') 17
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='18' data-month='6' data-year='2021') 18
+          .calendar--cell.calendar--cell-day(data-date='19' data-month='6' data-year='2021') 19
+          .calendar--cell.calendar--cell-day(data-date='20' data-month='6' data-year='2021') 20
+          .calendar--cell.calendar--cell-day(data-date='21' data-month='6' data-year='2021') 21
+          .calendar--cell.calendar--cell-day(data-date='22' data-month='6' data-year='2021') 22
+          .calendar--cell.calendar--cell-day(data-date='23' data-month='6' data-year='2021') 23
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='24' data-month='6' data-year='2021') 24
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='25' data-month='6' data-year='2021') 25
+          .calendar--cell.calendar--cell-day(data-date='26' data-month='6' data-year='2021') 26
+          .calendar--cell.calendar--cell-day(data-date='27' data-month='6' data-year='2021') 27
+          .calendar--cell.calendar--cell-day(data-date='28' data-month='6' data-year='2021') 28
+          .calendar--cell.calendar--cell-day(data-date='29' data-month='6' data-year='2021') 29
+          .calendar--cell.calendar--cell-day(data-date='30' data-month='6' data-year='2021') 30
+          .calendar--cell.calendar--cell-day.-weekend-(data-date='31' data-month='6' data-year='2021') 31
+          .calendar--cell.calendar--cell-day.-weekend-.-other-month-(data-date='1' data-month='7' data-year='2021') 1
+    .calendar--buttons
+      span.calendar--button-clear(data-action='clear') Очистить
+      span.calendar--button-apply(data-action='apply') Применить
+  

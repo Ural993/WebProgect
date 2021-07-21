@@ -9,9 +9,8 @@
         cursor: pointer;
         position: relative;
 
-        .star_border:nth-child(n+2) {
+        .star_border {
             margin-left: 3.5px;
-            ;
         }
 
         .star {
@@ -20,23 +19,23 @@
         }
 
         .star1 {
-            left: 1px;
+            left: 3px;
         }
 
         .star2 {
-            left: 25px;
+            left: 27px;
         }
 
         .star3 {
-            left: 48px;
+            left: 50px;
         }
 
         .star4 {
-            left: 72px;
+            left: 74px;
         }
 
         .star5 {
-            left: 95px;
+            left: 97px;
         }
     }
 }

@@ -4,7 +4,7 @@
 @import "../../FormElements/toggleButton/toggleButton.scss";
 @import "../../FormElements/rateButton/rateButton.scss";
 
-.room1 {
+.room2 {
     width: 270px;
     height: 257px;
     background-color: #fff;
@@ -18,34 +18,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        .gradientLeft,
-        .gradientRight {
-            position: absolute;
-            top: 0;
-            width: 42px;
-            height: 151px;
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-        }
-
-        .gradientRight {
-            right: 0;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-        }
-    }
-
-    .leftArrow,
-    .rightArrow {
-        position: absolute;
-    }
-
-    .rightArrow {
-        left: 244px;
-        top: 68px;
-    }
-
-    .leftArrow {
-        left: 18px;
-        top: 68px;
     }
 
     .circleBlock {
@@ -105,18 +77,6 @@
                         line-height: 29px;
 
 
-
-                        strong {
-                            font-family: 'Montserrat-Bold';
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 12px;
-                            line-height: 15px;
-                            text-transform: uppercase;
-                            color: #BC9CFF;
-                            padding-left: 5px;
-                            padding-top: 10px;
-                        }
                     }
                 }
 
@@ -152,7 +112,7 @@
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 18px;
-                padding-left: 23px;
+                padding-left: 29px;
                 padding-top: 4px;
                 color: rgba(31, 32, 65, 0.5);
                 ;

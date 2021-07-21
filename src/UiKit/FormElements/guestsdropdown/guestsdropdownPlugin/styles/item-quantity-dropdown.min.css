@@ -144,10 +144,12 @@ body {
     height: 159px;
 }
 
-.guestsdropdown .guestsdropdown-menu-option {
-    align-items: center;
-    display: flex;
+.guestsdropdown .guestsdropdown-menu-option {}
 
+.guestsdropdown-menu .guestsdropdown-menu-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .guestsdropdown .guestsdropdown-menu-option:last-child {
@@ -194,6 +196,7 @@ body {
     line-height: 15px;
     text-transform: uppercase;
     color: #1F2041;
+    padding-left: 15px;
 }
 
 .guestsdropdown p.guestsdropdown-description {

@@ -65,11 +65,19 @@
 
     .bigBtn-button {
         margin-top: 20px;
+
+        .bigBtn-text {
+            margin-left: 130px;
+        }
+
+        img {
+            margin-left: 106px;
+        }
     }
 
     .registration__footer {
         .text {
-            padding-right: 34px;
+            padding-right: 55px;
             font-family: 'Montserrat-Regular';
             font-style: normal;
             font-weight: normal;

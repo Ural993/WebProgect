@@ -4,27 +4,29 @@
 @import "./calendar/calendar.scss";
 @import "./signin/signin.scss";
 @import "./room1/room1.scss";
+@import "./room2/room2.scss";
 
-.section-cards,
-.section-logo {
-    background-color: #E5E5E5;
-}
+.cards {
 
-.section-logo {
-    padding: 30px 30px;
-}
+    .section-cards,
+    .section-logo {
+        background-color: #E5E5E5;
+    }
 
-.container {
-    padding: 0 140px;
-    background-color: #E5E5E5;
-}
+    .section-logo {
+        padding: 30px 30px;
+    }
 
-.section-cards {
-    padding-top: 42px;
-    display: flex;
-    justify-content: space-between;
+    .container {
+        padding: 0 140px;
+        padding-bottom: 140px;
+        background-color: #E5E5E5;
+    }
 
-
-
+    .section-cards {
+        padding-top: 42px;
+        display: flex;
+        justify-content: space-between;
+    }
 
 }

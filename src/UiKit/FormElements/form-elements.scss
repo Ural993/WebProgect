@@ -19,155 +19,165 @@
 }
 
 //---Блок форм--
-.section-formElements {
-  display: flex;
-  margin-top: 61px;
-
-  &-block1 {
-    margin-left: 141px;
-    margin-right: 126px;
-
-    @import "./email-input/email-input.scss";
-    @import "./text-input/text-input.scss";
-    @import "./masked-text-input/masked-text-input.scss";
-    @import "./dateDropdown/dateDropdown.scss";
-    @import "./comfortDropdown/comfortDropdown.scss";
-    @import "./checkboxList/checkboxList.scss";
-    @import "./comfortInformation/comfortInformation.scss";
-    @import "./convenienceInformation/convenienceInformation.scss";
-
-    .textFieldEmailTitleWrapper {
-      margin-bottom: 5px;
-    }
-
-    .textFieldTitleWrapper {
-      margin-top: 20.44px;
-      margin-bottom: 5px;
-    }
-
-    .guestsDropdownTitleWrapper {
-      margin-top: 20.44px;
-      margin-bottom: 5px;
-    }
-
-    .maskedTextFieldTitleWrapper {
-      margin-top: 22.56px;
-      margin-bottom: 5px;
-    }
-
-    .dateDropdownWrapper {
-      margin-top: 40px;
-    }
-
-    .comfortDropdownWrapper {
-      margin-top: 309.56px;
-    }
-
-    .checkboxListWrapper {
-      margin-top: 320px;
-      ;
-    }
-
-    .comfortInformationWrapper {
-      margin-top: 287px;
-      ;
-    }
-
-    .convenienceInformationWrapper {
-      margin-top: 21px;
-      ;
-    }
-
-
+.formElements {
+  .section-logo {
+    padding: 30px 30px;
   }
 
-  &-block2 {
-    margin-right: 92px;
-    @import "./checkboxButtons/checkboxButtons.scss";
-    @import "./radioButtons/radioButtons.scss";
-    @import "./toggleButton/toggleButton.scss";
-    @import "./likeButton/likeButton.scss";
-    @import "./rateButton/rateButton.scss";
-    @import "./richCheckboxButtons/richCheckboxButtons.scss";
-    @import "./commentBlock/commentBlock.scss";
+  .section-formElements {
+    display: flex;
+    margin-top: 35px;
 
-    .checkboxButtonsWrapper {}
+    &-block1 {
+      margin-left: 141px;
+      margin-right: 133px;
 
-    .radioButtonsWrapper {
-      margin-top: 40.88px;
+      @import "./email-input/email-input.scss";
+      @import "./text-input/text-input.scss";
+      @import "./masked-text-input/masked-text-input.scss";
+      @import "./dateDropdown/dateDropdown.scss";
+      @import "./comfortDropdown/comfortDropdown.scss";
+      @import "./checkboxList/checkboxList.scss";
+      @import "./comfortInformation/comfortInformation.scss";
+      @import "./convenienceInformation/convenienceInformation.scss";
+
+      .textFieldEmailTitleWrapper {
+        margin-bottom: 5px;
+      }
+
+      .textFieldTitleWrapper {
+        margin-top: 20.44px;
+        margin-bottom: 5px;
+      }
+
+      .guestsDropdownTitleWrapper {
+        margin-top: 20.44px;
+        margin-bottom: 5px;
+      }
+
+      .maskedTextFieldTitleWrapper {
+        margin-top: 22.56px;
+        margin-bottom: 5px;
+      }
+
+      .dateDropdownWrapper {
+        margin-top: 40px;
+      }
+
+      .comfortDropdownWrapper {
+        margin-top: 309.56px;
+      }
+
+      .checkboxListWrapper {
+        margin-top: 320px;
+        ;
+      }
+
+      .comfortInformationWrapper {
+        margin-top: 287px;
+        ;
+      }
+
+      .convenienceInformationWrapper {
+        margin-top: 21px;
+        ;
+      }
+
+
     }
 
-    .toggleButtonWrapper {
-      margin-top: 40.56px;
+    &-block2 {
+      margin-right: 92px;
+      @import "./checkboxButtons/checkboxButtons.scss";
+      @import "./radioButtons/radioButtons.scss";
+      @import "./toggleButton/toggleButton.scss";
+      @import "./likeButton/likeButton.scss";
+      @import "./rateButton/rateButton.scss";
+      @import "./richCheckboxButtons/richCheckboxButtons.scss";
+      @import "./commentBlock/commentBlock.scss";
+
+      .checkboxButtonsWrapper {}
+
+      .radioButtonsWrapper {
+        margin-top: 40.88px;
+      }
+
+      .toggleButtonWrapper {
+        margin-top: 40.56px;
+      }
+
+      .likeButtonTitleWrapper {
+        margin-top: 78.44px;
+        margin-bottom: 16px;
+      }
+
+      .likeButtonWrapper {}
+
+      .rateButtonWrapper {
+        margin-top: 42px;
+      }
+
+      .richCheckboxButtonsWrapper {
+        margin-top: 514px;
+      }
+
+      .commentBlockWrapper {
+        margin-top: 234px;
+      }
     }
 
-    .likeButtonTitleWrapper {
-      margin-top: 78.44px;
-      margin-bottom: 16px;
-    }
+    &-block3 {
+      @import "./rangeSlider/rangeSlider.scss";
+      @import "./bulletList/bulletList.scss";
+      @import "./paginationBlock/paginationBlock.scss";
 
-    .likeButtonWrapper {}
+      .rangeSliderWrapper {
+        padding-top: 40px;
+      }
 
-    .rateButtonWrapper {
-      margin-top: 42px;
-    }
+      .buttonsWrapper {
+        margin-top: 118.56px;
 
-    .richCheckboxButtonsWrapper {
-      margin-top: 514px;
-    }
+        .littleBtnWithBackground {
+          display: flex;
 
-    .commentBlockWrapper {
-      margin-top: 234px;
-    }
-  }
+          .littleBtnActiveWithBackground {
+            margin-right: 19px;
+          }
+        }
 
-  &-block3 {
-    @import "./rangeSlider/rangeSlider.scss";
-    @import "./bulletList/bulletList.scss";
-    @import "./paginationBlock/paginationBlock.scss";
+        .littleBtnWithoutBackground {
+          display: flex;
+          margin-top: 30px;
 
-    .buttonsWrapper {
-      margin-top: 118.56px;
+          .littleBtnActiveWithoutBackground {
+            margin-right: 19px;
+          }
+        }
 
-      .littleBtnWithBackground {
-        display: flex;
+        .btnText {
+          margin-top: 31px;
+          display: flex;
 
-        .littleBtnActiveWithBackground {
-          margin-right: 19px;
+          .rightbtnText {
+            margin-left: 20px;
+          }
+        }
+
+        .bigBtn {
+          margin-top: 30.44px;
         }
       }
 
-      .littleBtnWithoutBackground {
-        display: flex;
-        margin-top: 30px;
-
-        .littleBtnActiveWithoutBackground {
-          margin-right: 19px;
-        }
+      .paginationBlockWrapper {
+        margin-top: 40px;
       }
 
-      .btnText {
-        margin-top: 31px;
-        display: flex;
-
-        .rightbtnText {
-          margin-left: 20px;
-        }
+      .bulletListWrapper {
+        margin-top: 695px;
       }
 
-      .bigBtn {
-        margin-top: 30.44px;
-      }
-    }
-
-    .paginationBlockWrapper {
-      margin-top: 40px;
-    }
-
-    .bulletListWrapper {
-      margin-top: 695px;
     }
 
   }
-
 }

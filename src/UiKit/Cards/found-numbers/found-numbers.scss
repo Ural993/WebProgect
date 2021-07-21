@@ -18,6 +18,17 @@
     }
 
     @import "../../FormElements/dateDropdown/dateDropdown.scss";
+
+    .bigBtn-button {
+        .bigBtn-text {
+            margin-left: 85px;
+        }
+
+        img {
+            margin-left: 65px;
+        }
+    }
+
 }
 
 .guestsdropdown-wrapper {

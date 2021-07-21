@@ -1,71 +1,72 @@
-.section-logo
-  img(src="assets/img/Group.svg")
-.section-formElements
- .section-formElements-block1
-   .textFieldEmailTitleWrapper
-     +mainTitle("TEXT FIELD") 
-   include ./email-input/email-input.pug
-   .textFieldTitleWrapper  
-     +mainTitle("TEXT FIELD")  
-   include ./text-input/text-input.pug
-   .guestsDropdownTitleWrapper
-     +mainTitle("DROPDOWN")
-   include ./guestsdropdown/guestsdropdown.pug
-   .maskedTextFieldTitleWrapper 
-     +mainTitle("MASKED TEXT FIELD") 
-   include ./masked-text-input/masked-text-input.pug
-   .dateDropdownWrapper  
-     include ./dateDropdown/dateDropdown.pug
-   .comfortDropdownWrapper  
-     include ./comfortDropdown/comfortDropdown.pug
-   .checkboxListWrapper 
-     include ./checkboxList/checkboxList.pug
-   .comfortInformationWrapper  
-     include ./comfortInformation/comfortInformation.pug
-   .convenienceInformationWrapper  
-     include ./convenienceInformation/convenienceInformation.pug  
- .section-formElements-block2
-   .checkboxButtonsWrapper 
-     include ./checkboxButtons/checkboxButtons.pug
-   .radioButtonsWrapper
-     include ./radioButtons/radioButtons.pug
-   .toggleButtonWrapper  
-     include ./toggleButton/toggleButton.pug
-   .likeButtonTitleWrapper 
-     +mainTitle("LIKE BUTTON") 
-   .likeButtonWrapper  
-     include ./likeButton/likeButton.pug
-   .rateButtonWrapper  
-     include ./rateButton/rateButton.pug
-   .richCheckboxButtonsWrapper  
-     include ./richCheckboxButtons/richCheckboxButtons.pug
-   .commentBlockWrapper  
-     include ./commentBlock/commentBlock.pug  
- .section-formElements-block3
-   .rangeSliderWrapper  
-     include ./rangeSlider/rangeSlider.pug
-   .buttonsWrapper
-     .littleBtnWithBackground
-       .littleBtnActiveWithBackground 
-         +littleBtnActiveWithBackground("CLICK ME")
-       .littleBtnNotActiveWithBackground
-         +littleBtnNotActiveWithBackground("CLICK ME")
-     .littleBtnWithoutBackground 
-       .littleBtnActiveWithoutBackground
-         +littleBtnActiveWithoutBackground("CLICK ME")
-       .littleBtnNotActiveWithoutBackground 
-         +littleBtnNotActiveWithoutBackground("CLICK ME")
-     .btnText
-       .leftbtnText 
-         +btnTextWithLightColor
-       .rightbtnText
-         +btnTextWithDarckColor 
-     .bigBtn
-       +bigBtn("ПЕРЕЙТИ К ОПЛАТЕ")
-   .paginationBlockWrapper
-    +mainTitle("PAGINATION")
-    include ./paginationBlock/paginationBlock.pug         
-   .bulletListWrapper  
-     include ./bulletList/bulletList.pug
+.formElements 
+  .section-logo
+    img(src="assets/img/Group.svg")
+  .section-formElements
+    .section-formElements-block1
+      .textFieldEmailTitleWrapper
+        +mainTitle("TEXT FIELD") 
+      include ./email-input/email-input.pug
+      .textFieldTitleWrapper  
+        +mainTitle("TEXT FIELD")  
+      include ./text-input/text-input.pug
+      .guestsDropdownTitleWrapper
+        +mainTitle("DROPDOWN")
+      include ./guestsdropdown/guestsdropdown.pug
+      .maskedTextFieldTitleWrapper 
+        +mainTitle("MASKED TEXT FIELD") 
+      include ./masked-text-input/masked-text-input.pug
+      .dateDropdownWrapper  
+        include ./dateDropdown/dateDropdown.pug
+      .comfortDropdownWrapper  
+        include ./comfortDropdown/comfortDropdown.pug
+      .checkboxListWrapper 
+        include ./checkboxList/checkboxList.pug
+      .comfortInformationWrapper  
+        include ./comfortInformation/comfortInformation.pug
+      .convenienceInformationWrapper  
+        include ./convenienceInformation/convenienceInformation.pug  
+    .section-formElements-block2
+      .checkboxButtonsWrapper 
+        include ./checkboxButtons/checkboxButtons.pug
+      .radioButtonsWrapper
+        include ./radioButtons/radioButtons.pug
+      .toggleButtonWrapper  
+        include ./toggleButton/toggleButton.pug
+      .likeButtonTitleWrapper 
+        +mainTitle("LIKE BUTTON") 
+      .likeButtonWrapper  
+        include ./likeButton/likeButton.pug
+      .rateButtonWrapper  
+        include ./rateButton/rateButton.pug
+      .richCheckboxButtonsWrapper  
+        include ./richCheckboxButtons/richCheckboxButtons.pug
+      .commentBlockWrapper  
+        include ./commentBlock/commentBlock.pug  
+    .section-formElements-block3
+      .rangeSliderWrapper  
+        include ./rangeSlider/rangeSlider.pug
+      .buttonsWrapper
+        .littleBtnWithBackground
+          .littleBtnActiveWithBackground 
+            +littleBtnActiveWithBackground("CLICK ME")
+          .littleBtnNotActiveWithBackground
+            +littleBtnNotActiveWithBackground("CLICK ME")
+        .littleBtnWithoutBackground 
+          .littleBtnActiveWithoutBackground
+            +littleBtnActiveWithoutBackground("CLICK ME")
+          .littleBtnNotActiveWithoutBackground 
+            +littleBtnNotActiveWithoutBackground("CLICK ME")
+        .btnText
+          .leftbtnText 
+            +btnTextWithLightColor
+          .rightbtnText
+            +btnTextWithDarckColor 
+        .bigBtn
+          +bigBtn("ПЕРЕЙТИ К ОПЛАТЕ")
+      .paginationBlockWrapper
+        +mainTitle("PAGINATION")
+        include ./paginationBlock/paginationBlock.pug         
+      .bulletListWrapper  
+        include ./bulletList/bulletList.pug
 
 

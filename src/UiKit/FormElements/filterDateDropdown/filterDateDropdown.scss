@@ -1,0 +1,29 @@
+.filterDateDropdown {
+    display: flex;
+
+    &__input1 {
+        #input1 {
+            width: 266px;
+            height: 44px;
+            margin-right: 20px;
+            font-family: 'Montserrat-Regular';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 15px;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
+
+    &__input1Title {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 5.44px;
+        @include title1;
+    }
+}

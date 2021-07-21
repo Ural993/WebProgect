@@ -7,6 +7,7 @@ import './plugins/rateButtonsPlugin/rateButtonsPlugin';
 import './plugins/rangeSliderPlugin/rangeSliderPlugin';
 import './plugins/paginationPlugin/paginationPlugin';
 import './plugins/air-datepiker/js/datepicker';
+import './plugins/air-datepiker2/js/datepicker';
 
 // SCSS
 import './assets/scss/main.scss'

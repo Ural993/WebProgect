@@ -1,13 +1,13 @@
-
-.checkboxButton{
+.checkboxButton {
     opacity: 0;
 }
-.checkboxButtons-text{
+
+.checkboxButtons-text {
     position: relative;
     cursor: pointer;
 }
 
-.checkboxButtons-text::before{
+.checkboxButtons-text::before {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -19,7 +19,7 @@
 }
 
 .checkboxButtons-text::after {
-    top:7px;
+    top: 7px;
     left: -15px;
     position: absolute;
     display: inline-block;
@@ -29,8 +29,8 @@
     border-left: 2px solid;
     border-bottom: 2px solid;
     border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    -moz-border-image:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
-    -webkit-border-image:  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    -moz-border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: transparent;
     border-image-slice: 1;
@@ -38,31 +38,33 @@
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);   
+    transform: rotate(-45deg);
     content: none;
 }
 
-.checkboxButton:checked + .checkboxButtons-text::after{
+.checkboxButton:checked+.checkboxButtons-text::after {
     content: '';
 }
-.checkboxButton:checked + .checkboxButtons-text::before{
+
+.checkboxButton:checked+.checkboxButtons-text::before {
     border: 1px solid #BC9CFF;
 }
 
-.checkboxButtons{
-    &__title-wrapper{
-        .checkboxButtons-title{
+.checkboxButtons {
+    &__title-wrapper {
+        .checkboxButtons-title {
             margin: 0px;
             padding: 0px;
             @include title1;
         }
     }
-    &__block1{
+
+    &__block1 {
         display: flex;
-     
-        &__text{
+
+        &__text {
             margin: 0px;
-            margin-top: 17.12px;
+            //margin-top: 17.12px;
             padding: 0px;
             padding-left: 9.74px;
             font-family: 'Montserrat-Regular';
@@ -73,11 +75,12 @@
             color: rgba(31, 32, 65, 0.5);
         }
     }
-    &__block2{
+
+    &__block2 {
         display: flex;
         margin-top: 12px;
 
-        &__text{
+        &__text {
             margin: 0px;
             margin-top: 1px;
             padding: 0px;
@@ -91,11 +94,12 @@
 
         }
     }
-    &__block3{
+
+    &__block3 {
         display: flex;
         margin-top: 11.5px;
 
-        &__text{
+        &__text {
             margin: 0px;
             margin-top: 1px;
             padding: 0px;
